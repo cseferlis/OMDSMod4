@@ -58,6 +58,11 @@ Upon completion, submit the following as proof of your work:
 
 1. **Screenshot of the Storage Account** within the resource group.
    - ![Screenshot](../../images/hw1/hw1-screenshot.png)
+   <style>
+      img {
+         width: 400px;
+      }
+   </style>
 
 Save the screenshots as `.png` or `.jpg` files and upload them through the course submission portal for Homework 1.
 

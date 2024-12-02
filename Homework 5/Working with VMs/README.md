@@ -25,28 +25,58 @@ Ensure you pay attention to the following settings:
 1. **Image Selection**: Choose the Windows image recommended in the tutorial.
 
     ![Image Selection](../../images/hw5/hw5-img1.png)
+   <style>
+      img {
+         width: 400px;
+      }
+   </style>
 
 2. **Virtual Machine Size**: Select `Standard_D2s_v3` for your VM size to balance performance and cost.
 
     ![VM Size](../../images/hw5/hw5-img2.png)
+   <style>
+      img {
+         width: 400px;
+      }
+   </style>
 
 3. **Licensing**: If prompted, choose the option indicating you have a trial license. (Skip this if not shown.)
 
     ![Licensing](../../images/hw5/hw5-img3.png)
+   <style>
+      img {
+         width: 400px;
+      }
+   </style>
 
 4. **Disks**: Choose `Standard HDD` for the disk type to manage costs.
 
     ![Disks](../../images/hw5/hw5-img4.png)
+   <style>
+      img {
+         width: 400px;
+      }
+   </style>
 
 5. **Management**: Enable the 'Auto-Shutdown' feature to avoid unnecessary charges.
 
     ![Auto Shutdown](../../images/hw5/hw5-img4-5.png)
+   <style>
+      img {
+         width: 400px;
+      }
+   </style>
 
 6. **Networking, Monitoring, and Advanced Settings**: Leave the default options.
 
 7. **SQL Server Settings**: Confirm that you have a license.
 
     ![SQL Server Settings](../../images/hw5/hw5-img5.png)
+   <style>
+      img {
+         width: 400px;
+      }
+   </style>
 
 8. **Review and Create**: Verify your settings and proceed with the VM creation.
 
@@ -74,8 +104,18 @@ After connecting to your VM, perform the following configurations:
    - In the VM's "Server Manager," turn off the IE Enhanced Security Configuration under the "Local Server" tab.
 
     ![IE Enhanced Security Configuration](../../images/hw5/hw5-img6.png)
+   <style>
+      img {
+         width: 400px;
+      }
+   </style>
 
     ![IE Enhanced Security Configuration Disabled](../../images/hw5/hw5-img7.png)
+   <style>
+      img {
+         width: 400px;
+      }
+   </style>
 
 ## Step 4: Install Power BI Desktop
 
@@ -104,9 +144,19 @@ Upon completion, submit the following as proof of your work:
 
 1. **Screenshot of the PowerBI Page** 
    - ![Screenshot](../../images/hw5/hw5-powerbi.png)
+   <style>
+      img {
+         width: 400px;
+      }
+   </style>
 
 2. **Screenshot of the Virtual Machine** 
    - ![Screenshot](../../images/hw5/hw5-vm.png)
+   <style>
+      img {
+         width: 400px;
+      }
+   </style>
 
 Save the screenshots as `.png` or `.jpg` files and upload them through the course submission portal for Homework 1.
 

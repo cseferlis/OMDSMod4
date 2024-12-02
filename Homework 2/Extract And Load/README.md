@@ -53,12 +53,27 @@ Upon completion, submit the following as proof of your work:
 
 1. **Screenshot of the data file extracted in the storage account** 
    - ![Screenshot](../../images/hw2/container.png)
+   <style>
+      img {
+         width: 400px;
+      }
+   </style>
 
 2. **Screenshot of the Azure Blob Storage Linked Service**
    - ![Screenshot](../../images/hw2/linkedblob.png)
+   <style>
+      img {
+         width: 400px;
+      }
+   </style>
 
 3. **Screenshot of the HTTP Linked Service**
    - ![Screenshot](../../images/hw2/http.png)
+   <style>
+      img {
+         width: 400px;
+      }
+   </style>
 
 Save the screenshots as `.png` or `.jpg` files and upload them through the course submission portal for Homework 1.
 

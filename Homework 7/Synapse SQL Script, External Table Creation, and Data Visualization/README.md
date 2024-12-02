@@ -51,6 +51,11 @@ Create an external table in Azure Synapse, use Synapse SQL scripts to read `.par
 1. **Screenshot of SQL Query and Plot**:
    - Include a screenshot of your SQL query and the resulting plot from Synapse Studio.
    - ![Screenshot](../../images/hw7/hw7-screenshot.png)
+   <style>
+      img {
+         width: 400px;
+      }
+   </style>
 
 
 Follow all steps thoroughly and reach out for support if needed. Good luck, and enjoy exploring data with Azure Synapse!
