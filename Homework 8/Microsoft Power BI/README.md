@@ -17,7 +17,8 @@ The purpose of this homework is to familiarize you with the **fundamentals of Po
 
 - **Configure Folder Redirection** to enable access to local folders on your virtual machine:
   - Refer to the following tutorial for folder redirection: [Folder Redirection Guide](https://bowdoin.teamdynamix.com/TDClient/1814/Portal/KB/ArticleDet?ID=132977).
-    - ![Example Image 1](../../images/hw8/hw8/1.png) ![Example Image 2](../../images/hw8/2.png)
+   - <img src="../../images/hw8/1.png" alt="Screenshot" width="400">
+   - <img src="../../images/hw8/2.png" alt="Screenshot" width="400">
 
 ### 3. Create the Final Power BI Report
 Refer to the [Power BI Report Creation Tutorial](https://learn.microsoft.com/en-us/power-bi/create-reports/desktop-dimensional-model-report) for assistance.
