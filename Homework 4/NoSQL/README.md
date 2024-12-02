@@ -68,10 +68,8 @@ For this assignment, you will use the TMDB dataset for 5000 movies. The cleaned 
 Upon completion, submit the following as proof of your work:
 
 1. **Two Screenshots of the Following Query Execution** 
-   - ![Screenshot1](../../images/hw4/hw4-screenshot1.png)
    - <img src="../../images/hw4/hw4-screenshot1.png" alt="Screenshot" width="400">
 
-   - ![Screenshot2](../../images/hw4/hw4-screenshot2.png)
    - <img src="../../images/hw4/hw4-screenshot2.png" alt="Screenshot" width="400">
 
 Save the screenshots as `.png` or `.jpg` files and upload them through the course submission portal for Homework 1.
