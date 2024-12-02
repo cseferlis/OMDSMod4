@@ -27,45 +27,21 @@ Refer to the [Power BI Report Creation Tutorial](https://learn.microsoft.com/en-
 Your report should consist of the following interactive pages:
 
 1. **Course Enrollment Costs by University**
-   - ![Page 1](../../images/hw8/page1.png)
-   <style>
-      img {
-         width: 400px;
-      }
-   </style>
+   - <img src="../../images/hw8/page1.png" alt="Screenshot" width="400">
+
 
 2. **Course Enrollment Counts by University**
-   - ![Page 2](../../images/hw8/page2.png)
-   <style>
-      img {
-         width: 400px;
-      }
-   </style>
+   - <img src="../../images/hw8/page2.png" alt="Screenshot" width="400">
 
 3. **Student Demographics**
-   - ![Page 3](../../images/hw8/page3.png)
-   <style>
-      img {
-         width: 400px;
-      }
-   </style>
+   - <img src="../../images/hw8/page3.png" alt="Screenshot" width="400">
 
 4. **Professor Demographics**
-   - ![Page 4](../../images/hw8/page4.png)
-   <style>
-      img {
-         width: 400px;
-      }
-   </style>
+   - <img src="../../images/hw8/page4.png" alt="Screenshot" width="400">
 
 5. **Total Counts Page**:
    - Display the total counts of **'Enrollment_ID,' 'Student_ID,'** and **'Course_ID.'**
-   - ![Count Page](../../images/hw8/count.png)
-   <style>
-      img {
-         width: 400px;
-      }
-   </style>
+   - <img src="../../images/hw8/count.png" alt="Screenshot" width="400">
 
 ### Additional Requirements:
 - Ensure the layout of each report page matches the provided screenshots.
@@ -77,20 +53,9 @@ Ensure your BU account information is visible in the top right corner of your sc
 Your submission should include:
 
 1. **Screenshot of your Snowflake Schema data model**:
-   - ![Data Model](../../images/hw8/datamodel.png)
-   <style>
-      img {
-         width: 400px;
-      }
-   </style>
+   - <img src="../../images/hw8/datamodel.png" alt="Screenshot" width="400">
 
-2. **Screenshots of all five report pages**:
-   - ![Page 1](../../images/hw8/page1.png) ![Page 2](../../images/hw8/page2.png) ![Page 3](../../images/hw8/page3.png) ![Page 4](../../images/hw8/page4.png) ![Count Page](../../images/hw8/count.png)
-   <style>
-      img {
-         width: 400px;
-      }
-   </style>
+2. **Screenshots of all five report pages**
 
 > **Reminder**: The data will differ due to its random nature. Focus on ensuring the visuals and components are correctly built.
 

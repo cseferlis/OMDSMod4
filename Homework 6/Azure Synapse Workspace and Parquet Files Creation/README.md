@@ -48,22 +48,13 @@ Your submission should include the following:
 
 1. **Screenshot of Your Synapse Workspace**:
    - Ensure the screenshot clearly displays your Synapse Workspace.
-   - ![Screenshot](../../images/hw6/hw6-synapse.png)
-   <style>
-      img {
-         width: 400px;
-      }
-   </style>
+   - <img src="../../images/hw6/hw6-synapse.png" alt="Screenshot" width="400">
 
 2. **Directory or Storage Container View**:
    - Provide a screenshot showing the directory or storage container view with the partitioned `.parquet` files.
    - The partition names based on the manufacturer name should be clearly visible.
-   - ![Screenshot](../../images/hw6/hw6-data.png)
-   <style>
-      img {
-         width: 400px;
-      }
-   </style>
+   - <img src="../../images/hw6/hw6-data.png" alt="Screenshot" width="400">
+
 
 ### Additional Resources
 - [Tutorial: Write to a Data Lake](https://learn.microsoft.com/en-us/azure/data-factory/tutorial-data-flow-write-to-lake)

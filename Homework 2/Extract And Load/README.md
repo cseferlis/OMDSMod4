@@ -52,28 +52,13 @@ az deployment group create --resource-group <resource-group-name> --template-fil
 Upon completion, submit the following as proof of your work:
 
 1. **Screenshot of the data file extracted in the storage account** 
-   - ![Screenshot](../../images/hw2/container.png)
-   <style>
-      img {
-         width: 400px;
-      }
-   </style>
+   - <img src="../../images/hw2/container.png" alt="Screenshot" width="400">
 
 2. **Screenshot of the Azure Blob Storage Linked Service**
-   - ![Screenshot](../../images/hw2/linkedblob.png)
-   <style>
-      img {
-         width: 400px;
-      }
-   </style>
+   - <img src="../../images/hw2/linkedblob.png" alt="Screenshot" width="400">
 
 3. **Screenshot of the HTTP Linked Service**
-   - ![Screenshot](../../images/hw2/http.png)
-   <style>
-      img {
-         width: 400px;
-      }
-   </style>
+   - <img src="../../images/hw2/http.png" alt="Screenshot" width="400">
 
 Save the screenshots as `.png` or `.jpg` files and upload them through the course submission portal for Homework 1.
 
