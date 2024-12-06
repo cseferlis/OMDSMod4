@@ -18,7 +18,7 @@ Please follow the steps carefully and use the provided links for guidance on eac
 
 ## Instructions
 
-### Step 1: Create a Student Account in Azure
+### Step 1: Create a Student Account in Azure if you haven't done so already
 
 To access Azure resources, you’ll need to set up a Microsoft Azure student account. This will give you free access to essential Azure services, which you’ll use throughout the course.
 
@@ -56,7 +56,7 @@ The storage account will be used for data storage in future assignments, serving
 
 ---
 
-## Verification and Submission
+## Verification of Correctness and Completeness
 
 Upon completion, your output should look like the following image.
 
