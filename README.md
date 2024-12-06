@@ -1,7 +1,7 @@
 # BU OMDS MOD 4: Data Management at Scale
 
-### Course Overview
-This course empowers students with the skills to design and implement data processing workflows essential for informed decision-making within large-scale systems. Through supervised group projects, students will navigate the full data science lifecycle—from question formulation to data collection, wrangling, analysis, and visualization. The course applies tools and techniques for data collection, integration, and interpretation across relational (SQL), non-relational (NoSQL), and Big Data paradigms, enabling students to build, optimize, and maintain data pipelines and decision-making algorithms.
+### Course and Homework Overview
+This course empowers students with the skills to design and implement data processing workflows essential for informed decision-making within large-scale systems. Throughout the semester, students will navigate the full data science lifecycle—from question formulation to data collection, wrangling, analysis, and visualization. The course applies tools and techniques for data collection, integration, and interpretation across relational (SQL), non-relational (NoSQL), and Big Data paradigms, enabling students to build, optimize, and maintain data pipelines and decision-making algorithms.
 
 ### Core Topics Covered
 - Consolidation, synchronization, and summarization of multiple data streams
@@ -27,7 +27,7 @@ Upon completion, students will gain hands-on experience and expertise in:
 ### Prerequisites
 Ensure you have a Microsoft Azure student account. Instructions for setup will be provided in individual homework assignments.
 
-### Setting Up Your Azure Environment
+### The following instructions are for setting Up Your Azure Environment to ensure 
 1. **Sign In**: Log into the [Azure Portal](https://portal.azure.com) with your student account.
 2. **Access Cloud Shell**: 
    - Use the **[>_]** button next to the search bar to open a new Cloud Shell.
