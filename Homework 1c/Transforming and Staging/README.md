@@ -1,10 +1,10 @@
-# Homework 3 - Transforming and Staging
+# Homework 1c - Transforming and Staging
 
 **Class,**
 
-> **NOTE** - Homework 3 builds upon Homework 2 (Extract and Load). You will be using the same `resource group` and `data-factory` from the previous assignment. If you did not complete Homework 2, please reach out to TA Office Hours for assistance before starting this assignment.
+> **NOTE** - Homework 1c builds on your activities in Homework 1b (Extract and Load). You will be using the same `resource group` and `data-factory` from the previous assignment. If you could not complete Homework 1b due to difficulties, please reach out to LF Office Hours for assistance before starting this assignment.
 
-In Homework 2, you extracted and loaded a data file into your storage account. For Homework 3, you will extend that work by transforming and staging data from a `.txt` file into a SQL Server database table. Refer to the [reference document](https://static.nhtsa.gov/odi/ffdd/cmpl/Import_Instructions_Excel_All.pdf) for details on datatypes and fields.
+In Homework 1b, you extracted and loaded a data file into your storage account. For Homework 1c, you will extend that work by transforming and moving data from a `.txt` file into a SQL Server database table. Refer to the appendix of this [reference document](https://static.nhtsa.gov/odi/ffdd/cmpl/Import_Instructions_Excel_All.pdf) for details on datatypes and fields.
 
 ## Assignment Overview
 Using your existing Data Factory, you will:
@@ -12,45 +12,33 @@ Using your existing Data Factory, you will:
 1. **Transform**: Convert the `DateA` column datatype from text to date.
 2. **Stage**: Load the transformed data into a database table named `<initials>Complaints` within a SQL Server database.
 
-## Steps to Complete Homework 3
+## Steps to Complete Homework 1c
 
 ### Step 1: Set Up Your SQL Server and Database
-If you previously used the `bash fromTemplate.sh` script for creating your SQL Server, skip to **Step 3**. Otherwise, follow these instructions:
+Once again, you should use the `bash fromTemplate.sh` script for creating your SQL Server, using the following command to deploy resources:
 
-1. **Create an Azure SQL Server with a Sample Database**:
-   - Read the [full instructions](https://learn.microsoft.com/en-us/azure/azure-sql/database/single-database-create-quickstart?view=azuresql&tabs=azure-portal).
-   - **Resource Group**: Use the same resource group from Homework 2.
-   - **Database Name**: Use `<initials>omdsmod4db`. If using the script, `<initials>` may be randomized.
-   - **Region**: Choose a region close to your current location.
-   - **Admin Login**: Use `<first initial><last name>` (e.g., `jdoe`) and keep your password secure (default is `omdsmod4password013!` if using the script).
-   - **Server Name**: Use `<initials>omdsmod4server` (lowercase). If using the script, the server name will start with `db<random-string>`.
-   - **Workload Environment**: Select "Development".
-   - **Compute and Storage**: Configure as follows:
-     - **Service Tier**: Standard (S0)
-     - **DTUs**: 10 DTUs
-     - **Storage**: 250 GB
-     - Expected cost: ~$14.72/month.
-   - **Backup Storage**: Choose "Locally Redundant Storage".
-   - **Firewall Rules**: Select "Yes" for both options.
-   - **Trial Option**: Do not opt for the free trial.
-   - **Deployment Time**: Expect 5-10 minutes for deployment.
+```azurecli-interactive
+az deployment group create --resource-group <resource-group-name> --template-file <path-to-template.json> --parameters @<path-to-parameters.json>
+```
 
 ### Step 2: Create Your Database Table
-Use the `Complaints Reference File` to set up your table attributes with the correct data types. It is recommended to use `NVARCHAR` for text columns to handle Unicode characters.
+Use the `Complaints Reference File` to set up your table attributes with the correct data types. It is recommended to use `NVARCHAR` for text columns to handle Unicode characters. The reference file specifies the lengths of each of the attributes (colunmns) when defining your database table.
 
 ### Step 3: Load Data with Azure Data Factory
 1. Use Azure Data Factory to create a pipeline that includes:
-   - **Transformation**: Convert the `DateA` column from text to a date format.
-   - **Loading**: Transfer the data into the `<initials>Complaints` table.
+   - **Transformation**: Convert the `DateA` column from text to a date (not datetime) format.
+   - **Loading**: Insert the data into the `<initials>Complaints` table.
 
 ### Step 4: Query and Export Results
-After loading the data, run the following query in your SQL Server:
+After loading the data, run the following query in your SQL Server, making sure to replace the table name with the name you created for your table in your database:
 
 ```sql
 SELECT *
-FROM cbsComplaints
-WHERE CONVERT(Date, DATEA) = CONVERT(Date, GETDATE() - 1)
+FROM <cbsComplaints>
+WHERE DATEA = CONVERT(Date, GETDATE() - 1)
 ```
+
+**Note**: The "GETDATE() - 1" is a SQL command specifying Today's date -1 day, aka yesterday. However, if your latest file download is prior to today, or happens to fall on a weekend, you will have to change the "-1" to the most recent day where records exist in the source dataset. (-2, -5, -7, etc for the number of days back)
 
 Output the results to a file and save it as a PDF for submission.
 
@@ -73,6 +61,8 @@ Upon completion, submit the following as proof of your work:
 1. **Screenshot of Query Execution in Azure SQL Database** 
    - <img src="../../images/hw3/hw3-screenshot.png" alt="Screenshot" width="400">
 
+2. **PDF of SQL Query Output** Typically you can expect approximately a couple hundred records added per day, so if you are getting more, check your query, else, if you have zero, you may need to go back further with your GETDATE command.
+
 Save the screenshots as `.png` or `.jpg` files and upload them through the course submission portal for Homework 1.
 
 ---
@@ -81,16 +71,10 @@ Save the screenshots as `.png` or `.jpg` files and upload them through the cours
 - How do you use the `Complaints Reference File` to create a table in Azure SQL Database?
 - How do you use the `Copy Tool` to load data from Azure Storage to Azure SQL Database?
 - How do you handle rows with missing values?
+- What happens if the data in the txt file does not adhere to the datatype you've set for your SQL database table?
 - What if the header column names differ from table column names?
 - What is the current format of the file, the delimiter, and the number of columns?
 - How do you map columns and change their data types?
-
-## Deployment Using Template
-Use the following command to deploy resources:
-
-```azurecli-interactive
-az deployment group create --resource-group <resource-group-name> --template-file <path-to-template.json> --parameters @<path-to-parameters.json>
-```
 
 ---
 
