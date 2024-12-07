@@ -25,9 +25,10 @@ Upon completion, students will gain hands-on experience and expertise in:
 ## Getting Started with Assignments
 
 ### Prerequisites
-Ensure you have a Microsoft Azure student account. Instructions for setup will be provided in individual homework assignments.
+Ensure you have a Microsoft Azure student account. Instructions for setup of environment resources will be provided in individual homework assignments.
 
-### The following instructions are for setting Up Your Azure Environment to ensure 
+### The following instructions are for setting up your Azure environment to ensure proper service deployment and minimum expenditures. Similar to many organizations, each Azure service option has an SKU assigned with availability dictated by capacity and resources within each Azure region. Although each assignment provides instructions for resource deployment, please use these deployment scripts whenever possible. If you run into trouble, please work with your Learning Facilitator for assistance.
+
 1. **Sign In**: Log into the [Azure Portal](https://portal.azure.com) with your student account.
 2. **Access Cloud Shell**: 
    - Use the **[>_]** button next to the search bar to open a new Cloud Shell.
@@ -53,7 +54,10 @@ Ensure you have a Microsoft Azure student account. Instructions for setup will b
    ```
 
 6. **Deploying Resources in Azure**:
-   - Use the following command, replacing placeholders with the actual resource group name, template, and parameter file paths:
+
+This command will use a predefined template to create resources as required for the assignment.
+
+   - Use the following command, replacing placeholders marked with <resource-group-name>, <path-to-template.json>, and <path-to-parameters.json> using the actual resource group name, template, and parameter file paths for your environment:
    ```bash
    az deployment group create --resource-group <resource-group-name> --template-file <path-to-template.json> --parameters @<path-to-parameters.json>
    ```
@@ -62,7 +66,6 @@ Ensure you have a Microsoft Azure student account. Instructions for setup will b
    az deployment group create --resource-group OMDSMod4 --template-file ./homework1/azuredeploy.json --parameters @./homework1/azuredeploy.parameters.json
    ```
 
-This command will use a predefined template to create resources as required for the assignment.
 
 ---
 
