@@ -1,7 +1,7 @@
 # BU OMDS MOD 4: Data Management at Scale
 
 ### Course and Homework Overview
-This course empowers students with the skills to design and implement data processing workflows essential for informed decision-making within large-scale systems. Throughout the semester, students will navigate the full data science lifecycle—from question formulation to data collection, wrangling, analysis, and visualization. The course applies tools and techniques for data collection, integration, and interpretation across relational (SQL), non-relational (NoSQL), and Big Data paradigms, enabling students to build, optimize, and maintain data pipelines and decision-making algorithms.
+This course empowers students with the skills to design and implement data processing workflows essential for informed decision-making within large-scale systems. Throughout the semester, students will navigate the full data science lifecycle—from question formulation to data collection, wrangling, analysis, and visualization. The course applies tools and techniques for data collection, integration, and interpretation across relational (SQL), non-relational (NoSQL), and Big Data paradigms, enabling students to build, optimize, and maintain data pipelines and decision-making algorithms. When you have finished this course and related assignments, you too can join the illustrious group of BU Data Warriors!
 
 ### Core Topics Covered
 - Consolidation, synchronization, and summarization of multiple data streams
