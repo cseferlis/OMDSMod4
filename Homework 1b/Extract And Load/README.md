@@ -1,6 +1,6 @@
 # Homework 1b - Extract & Load
 
-
+In Homework 1a you developed your baseline for your Azure environment, Resource Group for logical service groupings, and a storage account for storing and working with your data. Now you will begin the process of manipulating data slighly by downloading the dataset we will work with for the majority of your homework assignments throughout the semester. From there, you'll extract the file to the same folder you've downloaded to stage the data for completing Homework 1c and the overall graded "Homework 1" assignment. So, without further ado...
 
 **Let the games begin!**
 
@@ -19,7 +19,7 @@ For this assignment, you will be working with the National Highway Traffic Safet
 
 ### Step-by-Step Guide
 1. **Set Up Azure Data Factory**:
-   - Ensure that you have access to an Azure subscription and have created an Azure Data Factory instance.
+   - Ensure that you have created your Azure account and storage account in order to create an Azure Data Factory instance.
    - Follow this guide to get started: [Getting Started with Azure Data Factory](https://learn.microsoft.com/en-us/azure/data-factory/quickstart-create-data-factory)
 
 2. **Extract the Data**:
@@ -28,20 +28,24 @@ For this assignment, you will be working with the National Highway Traffic Safet
    - Hint: Treat the data source as an HTTPS-linked dataset within ADF.
 
 3. **Load the Data**:
-   - Create a new Azure Storage account with blob storage enabled.
-   - Use ADF's copy activity to transfer the `.zip` file from the HTTPS source to your Azure Storage container.
+   - Use ADF's copy activity to transfer the `.zip` file from the HTTPS source to your Azure Storage container created in Homework 1a with Blob Storage enabled.
    - Reference: [How to Create a Storage Account](https://learn.microsoft.com/en-us/azure/storage/common/storage-account-create?tabs=azure-portal)
 
 4. **Unzip the File**:
    - Use ADF's built-in tools to unzip the file within the pipeline. Ensure that the extracted content is in `.txt` format and stored in your Azure Storage account.
-   - Follow tutorials and documentation from Microsoft for guidance on data transformation and extraction.
+   - Follow tutorials and documentation from Microsoft for guidance on data transformation and extraction. You can start with this [Quickstart](https://learn.microsoft.com/en-us/azure/data-factory/quickstart-hello-world-copy-data-tool)
 
-### Reference Files and Tutorials
+## Reference Files and Tutorials
+
+### Source data file information
+
+As discussed, we will be using Complaints Data from NHTSA for the majority of the assignments in this module. Please closely review the folling resources to ensure you have a good grasp of the data we will be using, and pay special attention to Appendix A of the Complaints Reference File as this will help you define your schema for staging your data going into Homework 1c. You **may** follow the steps for working with the data in Excel preceeding the schema reference, however, it will only help you understand working with the data but will not help you with this assignment. 
+
 - **NHTSA Complaints Data Information**: [Complaints Information](https://www.nhtsa.gov/nhtsa-datasets-and-apis#complaints)
 - **Complaints Reference File**: [Reference Document](https://static.nhtsa.gov/odi/ffdd/cmpl/Import_Instructions_Excel_All.pdf)
 
 ## Using Deployment Template
-For any resource deployment, use the following command. Replace placeholders with your specific resource group and file paths:
+For any resource deployment, use the following command. Replace placeholders with your specific resource group and file paths as discussed in the [Top-Level Readme File:](https://github.com/cseferlis/OMDSMod4/blob/main/README.md)
 
 ```azurecli-interactive
 az deployment group create --resource-group <resource-group-name> --template-file <path-to-template.json> --parameters @<path-to-parameters.json>
@@ -49,9 +53,9 @@ az deployment group create --resource-group <resource-group-name> --template-fil
 
 ---
 
-## Verification and Submission
+## Verification of Correctness and Completion
 
-Upon completion, submit the following as proof of your work:
+Upon completion, your output should look like the following images:
 
 1. **Screenshot of the data file extracted in the storage account** 
    - <img src="../../images/hw2/container.png" alt="Screenshot" width="400">
@@ -62,8 +66,6 @@ Upon completion, submit the following as proof of your work:
 3. **Screenshot of the HTTP Linked Service**
    - <img src="../../images/hw2/http.png" alt="Screenshot" width="400">
 
-Save the screenshots as `.png` or `.jpg` files and upload them through the course submission portal for Homework 1.
-
 ---
 
 ### Key Points to Consider 🤔
@@ -71,6 +73,6 @@ Save the screenshots as `.png` or `.jpg` files and upload them through the cours
 - What is the best approach to ensure the `.zip` file is unzipped automatically within ADF?
 - How will you verify the integrity and structure of the `.txt` file once it’s extracted?
 
-Ensure you complete all steps and verify that your data has been properly extracted and loaded into your Azure Storage account. Reach out for assistance if needed, and don’t hesitate to explore additional resources and tutorials.
+Ensure you complete all steps and verify that your data has been properly extracted and loaded into your Azure Storage account. Reach out for assistance to your Learning Facilitator if needed, and don’t hesitate to explore additional resources and tutorials found through your search engine of choice.
 
 Good luck, and enjoy the challenge!
