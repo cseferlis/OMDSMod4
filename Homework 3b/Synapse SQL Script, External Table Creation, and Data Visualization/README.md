@@ -50,7 +50,7 @@ Create an external table in Azure Synapse, use Synapse SQL scripts to read `.par
 
 1. **Screenshot of SQL Query and Plot**:
    - Include a screenshot of your SQL query and the resulting plot from Synapse Studio.
-   - <img src="../../images/hw7/hw7-screenshot.png" alt="Screenshot" width="400">
+   - <img src="../../images/hw3b/hw7-screenshot.png" alt="Screenshot" width="400">
 
 
 

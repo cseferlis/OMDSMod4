@@ -28,21 +28,21 @@ Refer to the [Power BI Report Creation Tutorial](https://learn.microsoft.com/en-
 Your report should consist of the following interactive pages:
 
 1. **Course Enrollment Costs by University**
-   - <img src="../../images/hw8/page1.png" alt="Screenshot" width="400">
+   - <img src="../../images/hw3c/page1.png" alt="Screenshot" width="400">
 
 
 2. **Course Enrollment Counts by University**
-   - <img src="../../images/hw8/page2.png" alt="Screenshot" width="400">
+   - <img src="../../images/hw3c/page2.png" alt="Screenshot" width="400">
 
 3. **Student Demographics**
-   - <img src="../../images/hw8/page3.png" alt="Screenshot" width="400">
+   - <img src="../../images/hw3c/page3.png" alt="Screenshot" width="400">
 
 4. **Professor Demographics**
-   - <img src="../../images/hw8/page4.png" alt="Screenshot" width="400">
+   - <img src="../../images/hw3c/page4.png" alt="Screenshot" width="400">
 
 5. **Total Counts Page**:
    - Display the total counts of **'Enrollment_ID,' 'Student_ID,'** and **'Course_ID.'**
-   - <img src="../../images/hw8/count.png" alt="Screenshot" width="400">
+   - <img src="../../images/hw3c/count.png" alt="Screenshot" width="400">
 
 ### Additional Requirements:
 - Ensure the layout of each report page matches the provided screenshots.
@@ -54,7 +54,7 @@ Ensure your BU account information is visible in the top right corner of your sc
 Your submission should include:
 
 1. **Screenshot of your Snowflake Schema data model**:
-   - <img src="../../images/hw8/datamodel.png" alt="Screenshot" width="400">
+   - <img src="../../images/hw3c/datamodel.png" alt="Screenshot" width="400">
 
 2. **Screenshots of all five report pages**
 

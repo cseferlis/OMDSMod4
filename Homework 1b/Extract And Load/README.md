@@ -58,13 +58,13 @@ az deployment group create --resource-group <resource-group-name> --template-fil
 Upon completion, your output should look like the following images:
 
 1. **Screenshot of the data file extracted in the storage account** 
-   - <img src="../../images/hw2/container.png" alt="Screenshot" width="400">
+   - <img src="../../images/hw1b/container.png" alt="Screenshot" width="400">
 
 2. **Screenshot of the Azure Blob Storage Linked Service**
-   - <img src="../../images/hw2/linkedblob.png" alt="Screenshot" width="400">
+   - <img src="../../images/hw1b/linkedblob.png" alt="Screenshot" width="400">
 
 3. **Screenshot of the HTTP Linked Service**
-   - <img src="../../images/hw2/http.png" alt="Screenshot" width="400">
+   - <img src="../../images/hw1b/http.png" alt="Screenshot" width="400">
 
 ---
 

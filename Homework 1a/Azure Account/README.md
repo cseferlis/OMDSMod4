@@ -61,7 +61,7 @@ The storage account will be used for data storage in future assignments, serving
 Upon completion, your output should look like the following image.
 
 1. **Screenshot of the Storage Account** within the resource group.
-   - <img src="../../images/hw1/hw1-screenshot.png" alt="Screenshot" width="400">
+   - <img src="../../images/hw1a/hw1-screenshot.png" alt="Screenshot" width="400">
 
 If you screen matches closely, understanding names may be different, and your user id in the top right corner of the portal instead of what's shown, you have completed HW1a, congrats!
 
