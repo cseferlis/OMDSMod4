@@ -2,7 +2,7 @@
 
 **Class,**
 
-> **NOTE** - Homework 2 builds on the work done in Homework 1(a-c). You will use the same `resource group` and `data-factory` created in previous assignments. If you could not complete those assignments, please reach out to an LF Office Hours for assistance. Create a new pipeline specifically for HW2.
+> **NOTE** - Homework 2 builds on the work done in Homework 1(a-c). You will use the same `resource group` and `data-factory` created in previous assignments. If you could not complete those assignments, please reach out to an LF for assistance. Create a new pipeline specifically for HW2.
 
 ## Introduction
 We are now shifting our focus to NoSQL databases and working with Microsoft's powerful, globally distributed, multi-modal database, CosmosDB. This flexible DBMS supports various data models, including SQL, Graph, and Document databases, and provides sub-10ms replication to nodes worldwide. Its impressive speed powers services such as the Xbox Gaming network.
@@ -34,7 +34,8 @@ For this assignment, you will use the TMDB dataset for 5000 movies. The cleaned 
    - **Database ID**: `omdsmod4`
    - **Container ID**: `movies`
    - **Partition Key**: Use `status` as the partition key.
-   - **Throughput**: Set to Manual and configure at 400 RU/s.
+   - **Throughput**: Set to Manual and configure at 400 RU/s or whatever the "Free" tier is. 
+   > **Note:** you may have to play with the configuration of Manual and Auto Scaling to get the appropriate free tier of the database. make sure to use caution when setting the R/U Compute as an incorrect setting can cause cost overruns, expending your free credits.
 
 4. **Load the Data**:
    - Use ADF's copy tool to load the JSON data from the online link into the `movies` container in CosmosDB.
