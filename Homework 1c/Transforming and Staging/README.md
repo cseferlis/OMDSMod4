@@ -15,14 +15,14 @@ Using your existing Data Factory, you will:
 ## Steps to Complete Homework 1c
 
 ### Step 1: Set Up Your SQL Server and Database
-Once again, you should use the `bash fromTemplate.sh` script for creating your SQL Server, using the following command to deploy resources:
+Once again, you should use the `bash fromTemplate.sh` script for creating your SQL Server, using the following command to deploy resources, remembering to replace your resource group, template and parameter details as with Homework 1b:
 
 ```azurecli-interactive
 az deployment group create --resource-group <resource-group-name> --template-file <path-to-template.json> --parameters @<path-to-parameters.json>
 ```
 
 ### Step 2: Create Your Database Table
-Use the `Complaints Reference File` to set up your table attributes with the correct data types. It is recommended to use `NVARCHAR` for text columns to handle Unicode characters. The reference file specifies the lengths of each of the attributes (colunmns) when defining your database table.
+Use the `Complaints Reference File` to set up your table attributes with the correct data types. It is recommended to use `NVARCHAR` for text columns to handle Unicode characters. The reference file specifies the lengths of each of the attributes (columns) when defining your database table.
 
 ### Step 3: Load Data with Azure Data Factory
 1. Use Azure Data Factory to create a pipeline that includes:
@@ -38,7 +38,7 @@ FROM <cbsComplaints>
 WHERE DATEA = CONVERT(Date, GETDATE() - 1)
 ```
 
-**Note**: The "GETDATE() - 1" is a SQL command specifying Today's date -1 day, aka yesterday. However, if your latest file download is prior to today, or happens to fall on a weekend, you will have to change the "-1" to the most recent day where records exist in the source dataset. (-2, -5, -7, etc for the number of days back)
+> **Note**: The "GETDATE() - 1" is a SQL command specifying Today's date -1 day, aka yesterday. However, if your latest file download is prior to today, or happens to fall on a weekend, you will have to change the "-1" to the most recent day where records exist in the source dataset. (-2, -5, -7, etc for the number of days back)
 
 Output the results to a file and save it as a PDF for submission.
 
@@ -63,7 +63,7 @@ Upon completion, submit the following as proof of your work:
 
 2. **PDF of SQL Query Output** Typically you can expect approximately a couple hundred records added per day, so if you are getting more, check your query, else, if you have zero, you may need to go back further with your GETDATE command.
 
-Save the screenshots as `.png` or `.jpg` files and upload them through the course submission portal for Homework 1.
+Save the screenshots as `.png` or `.jpg` files and upload them through the course submission portal for Homework 1c.
 
 ---
 
