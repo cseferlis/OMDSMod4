@@ -1,8 +1,8 @@
-# Homework 4 - NoSQL
+# Homework 2 - NoSQL
 
 **Class,**
 
-> **NOTE** - Homework 4 builds on the work done in Homework 2 and Homework 3. You will use the same `resource group` and `data-factory` created in previous assignments. If you did not complete those assignments, please reach out to TA Office Hours for assistance. Create a new pipeline specifically for HW4.
+> **NOTE** - Homework 2 builds on the work done in Homework 1(a-c). You will use the same `resource group` and `data-factory` created in previous assignments. If you could not complete those assignments, please reach out to an LF Office Hours for assistance. Create a new pipeline specifically for HW2.
 
 ## Introduction
 We are now shifting our focus to NoSQL databases and working with Microsoft's powerful, globally distributed, multi-modal database, CosmosDB. This flexible DBMS supports various data models, including SQL, Graph, and Document databases, and provides sub-10ms replication to nodes worldwide. Its impressive speed powers services such as the Xbox Gaming network.
@@ -10,19 +10,19 @@ We are now shifting our focus to NoSQL databases and working with Microsoft's po
 Read more about CosmosDB and its capabilities [here](https://learn.microsoft.com/en-us/azure/cosmos-db/introduction).
 
 ## Assignment Overview
-Building on Homework 2 and 3, where you extracted and loaded data into your Azure storage account, you will now work with a NoSQL database to load and manipulate complex data structures with nested attributes.
+Building on Homework 1, where you extracted and loaded data into your Azure storage account, you will now work with a NoSQL database to load and manipulate complex data structures with nested attributes.
 
 For this assignment, you will use the TMDB dataset for 5000 movies. The cleaned version of this dataset is hosted [here](https://data.koley.in/tmdb_5000_movies.json).
 
-### Steps to Complete Homework 4
+### Steps to Complete Homework 2
 
 1. **Extract Data Using Azure Data Factory (ADF)**:
    - Create a new ADF pipeline to grab the JSON file from the provided link: [TMDB Dataset](https://data.koley.in/tmdb_5000_movies.json).
 
 2. **Set Up Azure CosmosDB**:
-   - Follow this [tutorial](https://learn.microsoft.com/en-us/azure/cosmos-db/nosql/quickstart-portal) to deploy a CosmosDB instance.
-     - **Important**: Do not clean up resources in the final step—the database should remain active.
-   - To manage costs, you can run the template from the repository using:
+   - Follow this [tutorial](https://learn.microsoft.com/en-us/azure/cosmos-db/nosql/quickstart-portal) to learn how to deploy a CosmosDB instance.
+     
+   - To deploy resources run the template from the repository using the following command from the Azure CLI, remembering to replace the resource group, template and parameters for your environment:
      ```sh
      bash ./formtemplate.sh
      ```
@@ -52,15 +52,16 @@ For this assignment, you will use the TMDB dataset for 5000 movies. The cleaned 
    - This should return 26 movie titles tagged with "artificial intelligence." If your result matches, your work is correct.
 
 6. **Modify and Run an Additional Query**:
-   - Modify the above query to find movies produced by the **"Dentsu"** production company:
+   - Now take what you have learned to modify the above query to find movies produced by the **"Dentsu"** production company starting with the query structure below. There should be 12 records returned as refereced in the image required for submission:
      ```sql
      SELECT c.title 
      FROM movies AS c 
-     JOIN pc IN c.production_companies 
-     WHERE pc.name = "Dentsu"
+     JOIN 
+     WHERE 
      ```
    - Capture a screenshot of the output for both queries, ensuring your Azure account is visible in the top right corner of the window.
 
+      - **Important**: Do not clean up resources in the final step—the database should remain active.
 ---
 
 ## Verification and Submission
