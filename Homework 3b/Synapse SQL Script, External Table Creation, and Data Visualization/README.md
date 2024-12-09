@@ -1,6 +1,6 @@
-# Homework 7: Synapse SQL Script, External Table Creation, and Data Visualization
+# Homework 3b: Synapse SQL Script, External Table Creation, and Data Visualization
 
-In Homework 7, you will connect to the `.parquet` file created in Homework 6, mount it as an external table in your Azure Synapse Serverless Pool, and visualize the data using Synapse Studio. This assignment will require setting up proper permissions for your Azure Storage account, ensuring the correct configuration of your `.parquet` file, and running queries to produce a visual representation of the data.
+In Homework 3b, you will connect to the `.parquet` file created in Homework 3a, mount it as an external table in your Azure Synapse Serverless Pool, and in Homework 3c visualize the data using PowerBI. This assignment will require setting up proper permissions for your Azure Storage account, ensuring the correct configuration of your `.parquet` file, and running queries to produce a visual representation of the data. In Homework 3c, you will then connect to your Synapse environment from PowerBI and visualize the data you've been working with.
 
 ## Objective
 Create an external table in Azure Synapse, use Synapse SQL scripts to read `.parquet` files, and visualize the queried data.
@@ -46,11 +46,11 @@ Create an external table in Azure Synapse, use Synapse SQL scripts to read `.par
   - Use the query results to create a visual representation of the data.
   - This can be a bar chart or line graph that displays the number of crashes per year.
 
-## Submission
+## Completion
 
-1. **Screenshot of SQL Query and Plot**:
-   - Include a screenshot of your SQL query and the resulting plot from Synapse Studio.
+1. **What your SQL Query and Plot should look like**:
    - <img src="../../images/hw3b/hw7-screenshot.png" alt="Screenshot" width="400">
+   - If not? Make sure to check in with the LFs for support.
 
 
 

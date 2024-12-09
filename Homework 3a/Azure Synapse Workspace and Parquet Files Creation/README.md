@@ -1,14 +1,14 @@
-# Homework 6: Azure Synapse Workspace and Parquet Files Creation
+# Homework 3a: Azure Synapse Workspace and Parquet Files Creation
 
 ## Objective
 
-In this assignment, you will begin working with Azure Synapse Analytics and utilize its SQL Serverless pools powered by a Massively Parallel Processing (MPP) engine. Your task is to prepare your data by converting the NHTSA Complaints File into a `.parquet` format suitable for distributed systems and datasets (sharding). This process simulates the preparation needed to connect to data using Polybase and read directly from the Data Lake. In Homework 7, you will connect to this data as an external table. The main objective of this assignment is to create an Azure Synapse Workspace and partition `.parquet` files by manufacturer name.
+In this assignment, we are getting back to our NHTSA data where you will begin working with Azure Synapse Analytics and utilize its SQL Serverless pools powered by a Massively Parallel Processing (MPP) engine. Your task is to prepare your data by converting the NHTSA Complaints File into a `.parquet` format suitable for distributed systems and datasets (sharding). This process simulates the preparation needed to connect to data using Polybase and read directly from the Data Lake. In Homework 7, you will connect to this data as an external table. The main objective of this assignment is to create an Azure Synapse Workspace and partition `.parquet` files by manufacturer name.
 
 ## Tasks
 
 ### 1. Upgrade Your Storage Account
 
-To link your Synapse Workspace to a storage account, it must be upgraded to ADLS Gen 2. Follow these steps:
+To link your Synapse Workspace to a storage account, it may need to be upgraded to ADLS Gen 2 if you didn't set it up on your original deployment. If so (else go to #2):
 - **Enable Hierarchical Namespace**: Navigate to your storage account overview, and under the Data Lake Storage heading, enable the hierarchical namespace option.
 
 ### 2. Convert the NHTSA TXT File to Parquet Format
@@ -42,21 +42,22 @@ Set up your Azure Synapse Workspace by following these steps:
 
 Ensure the `.parquet` files created from the NHTSA data are accessible in your Synapse Workspace. This will be essential for the subsequent homework.
 
-## Submission
+## Before going to Homework 3b:
 
-Your submission should include the following:
+Your development should include the following:
 
 1. **Screenshot of Your Synapse Workspace**:
-   - Ensure the screenshot clearly displays your Synapse Workspace.
    - <img src="../../images/hw3a/hw6-synapse.png" alt="Screenshot" width="400">
 
 2. **Directory or Storage Container View**:
-   - Provide a screenshot showing the directory or storage container view with the partitioned `.parquet` files.
-   - The partition names based on the manufacturer name should be clearly visible.
    - <img src="../../images/hw3a/hw6-data.png" alt="Screenshot" width="400">
 
 
 ### Additional Resources
 - [Tutorial: Write to a Data Lake](https://learn.microsoft.com/en-us/azure/data-factory/tutorial-data-flow-write-to-lake)
 
-Ensure all steps are completed accurately and verify that the `.parquet` files are correctly partitioned and accessible from your Synapse Workspace. Reach out if you have any questions or need further assistance.
+Ensure all steps are completed accurately and verify that the `.parquet` files are correctly partitioned and accessible from your Synapse Workspace. Reach out to your LF if you have any questions or need further assistance.
+
+###NSuggested: 
+- More information about Polybase a.k.a. Data Virutalization [here:](https://learn.microsoft.com/en-us/sql/relational-databases/polybase/polybase-guide?view=sql-server-ver16)
+- More about Parquet: [here:]{https://www.databricks.com/glossary/what-is-parquet}
