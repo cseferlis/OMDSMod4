@@ -1,6 +1,6 @@
 # Homework 1b - Extract & Load
 
-In Homework 1a you developed your baseline for your Azure environment, Resource Group for logical service groupings, and a storage account for storing and working with your data. Now you will begin the process of manipulating data slighly by downloading the dataset we will work with for the majority of your homework assignments throughout the semester. From there, you'll extract the file to the same folder you've downloaded to stage the data for completing Homework 1c and the overall graded "Homework 1" assignment. So, without further ado...
+In Homework 1a you developed your baseline for your Azure environment, Resource Group for logical service groupings, and a storage account for storing and working with your data. Now you will begin the process of manipulating data slighly by downloading the dataset we will work with for the majority of your homework assignments throughout the semester. From there, you'll extract the file to the same folder you've downloaded to stage the data for completing Homework 1c and the overall graded assignment. So, without further ado...
 
 **Let the games begin!**
 

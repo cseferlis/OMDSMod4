@@ -1,4 +1,4 @@
-# Homework 1: Azure Account
+# Homework 1a: Preparing your Azure Environment
 
 The National Highway Traffic Safety Administration (NHTSA) is a U.S. government agency committed to ensuring safety on America’s roads. By enforcing vehicle performance standards and collaborating with state and local governments, NHTSA works to reduce fatalities, injuries, and economic losses caused by motor vehicle crashes. Dedicated to the highest standards of excellence in motor vehicle and highway safety, the agency focuses daily on preventing crashes and minimizing their human and financial tolls. Guided by its core values of Integrity, Service, and Leadership, NHTSA strives to exceed public expectations and enhance roadway safety nationwide. Homework 1 and 3 will use the "Complaints" dataset from NHTSA that is a public record of all registered complaints about various automobiles over the years. The data is collected via web interface and phone calls, so the data itself can have some challenges with integrity and consistency, which you'll get to experience first hand!
 
