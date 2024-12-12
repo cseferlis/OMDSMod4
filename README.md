@@ -1,7 +1,7 @@
 # BU OMDS MOD 4: Data Management at Scale
 
 ### Course and Homework Overview
-This course empowers students with the skills to design and implement data processing workflows essential for informed decision-making within large-scale systems. Throughout the semester, students will navigate the full data science lifecycle—from question formulation to data collection, wrangling, analysis, and visualization. The course applies tools and techniques for data collection, integration, and interpretation across relational (SQL), non-relational (NoSQL), and Big Data paradigms, enabling students to build, optimize, and maintain data pipelines and decision-making algorithms. When you have finished this course and related assignments, you too can join the illustrious group of BU Data Warriors!
+This course empowers students with the skills to design and implement data processing workflows essential for informed decision-making organizations and otherwise. Throughout the semester, students will navigate the full data science lifecycle—from question formulation to data collection, wrangling, analysis, and visualization. The course applies tools and techniques for data collection, integration, and interpretation across relational (SQL), non-relational (NoSQL), and Big Data paradigms, enabling students to build, optimize, and maintain data pipelines and decision-making algorithms. When you have finished this course and related assignments, you too can join the illustrious group of BU Data Warriors!
 
 ### Core Topics Covered
 - Consolidation, synchronization, and summarization of multiple data streams
@@ -25,9 +25,9 @@ Upon completion, students will gain hands-on experience and expertise in:
 ## Getting Started with Assignments
 
 ### Prerequisites
-Ensure you have a Microsoft Azure student account. Instructions for setup of environment resources will be provided in individual homework assignments.
+Ensure you have a Microsoft Azure student account. Instructions for setup of environment resources to be used for individual assignments will be provided in each homework assignment page.
 
-### The following instructions are for setting up your Azure environment homework resources to ensure proper service deployment and minimum expenditures. Similar to many organizations, each Azure service option has an SKU assigned with availability dictated by capacity and resources within each Azure region. For each asssignment where resources do not have manual instructions for deployment, you will use the following instructions and specify each homework assignment in the details of the deployment. If you run into trouble, please work with your Learning Facilitator for assistance. These instructions assume you have created your Azure account, and deployed the necessary resources in Homework 1a. If not, please head over there first before continuing.
+### The following instructions are for setting up your Azure environment homework resources to ensure proper service deployment and minimum expenditure. Similar to many organizations, each Azure service option has an SKU assigned with availability dictated by capacity and resources within each Azure region. For each asssignment where resources do not have manual instructions for deployment, you will use the following instructions and specify each homework assignment in the details of the deployment. If you run into trouble, please work with your Learning Facilitator for assistance. These instructions assume you have created your Azure account, and deployed the necessary resources in Homework 1a as you move on to subsequent assignments. If not, please head over there first before continuing.
 
 1. **Sign In**: Log into the [Azure Portal](https://portal.azure.com) with your student account.
 2. **Access Cloud Shell**: 
@@ -81,7 +81,7 @@ For further guidance on using Azure, refer to:
 - **Resource Group Names**: Use unique names for resource groups to avoid conflicts.
 - **Azure Subscription**: Verify you are using the "Azure for Students" subscription to utilize free resources.
 
-For any questions or issues, please reach out through the course discussion platform or contact your instructor directly.
+For any questions or issues, please reach out through the course discussion platform or contact your Learning Facilitator directly.
 
 ---
 
