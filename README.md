@@ -27,7 +27,7 @@ Upon completion, students will gain hands-on experience and expertise in:
 ### Prerequisites
 Ensure you have a Microsoft Azure student account. Instructions for setup of environment resources will be provided in individual homework assignments.
 
-### The following instructions are for setting up your Azure environment to ensure proper service deployment and minimum expenditures. Similar to many organizations, each Azure service option has an SKU assigned with availability dictated by capacity and resources within each Azure region. Although each assignment provides instructions for resource deployment, please use these deployment scripts whenever possible. If you run into trouble, please work with your Learning Facilitator for assistance.
+### The following instructions are for setting up your Azure environment homework resources to ensure proper service deployment and minimum expenditures. Similar to many organizations, each Azure service option has an SKU assigned with availability dictated by capacity and resources within each Azure region. For each asssignment where resources do not have manual instructions for deployment, you will use the following instructions and specify each homework assignment in the details of the deployment. If you run into trouble, please work with your Learning Facilitator for assistance. These instructions assume you have created your Azure account, and deployed the necessary resources in Homework 1a. If not, please head over there first before continuing.
 
 1. **Sign In**: Log into the [Azure Portal](https://portal.azure.com) with your student account.
 2. **Access Cloud Shell**: 
