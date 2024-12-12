@@ -23,7 +23,7 @@
             "type": "string"
         },
         "tagsByResource": {
-            "type": "Object"
+            "type": "object"
         },
         "vNetEnabled": {
             "defaultValue": false,
