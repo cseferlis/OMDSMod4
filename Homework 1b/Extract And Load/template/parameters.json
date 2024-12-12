@@ -5,9 +5,7 @@
         "subscription": {
             "value": "@subId"
         },
-        "resourceGroup": {
-            "value": "omdsmod4"
-        },
+
         "name": {
             "value": "@dfName"
         },
@@ -15,7 +13,7 @@
             "value": "V2"
         },
         "location": {
-            "value": "eastus2"
+            "value": "[resourceGroup().location]"
         },
         "vNetEnabled": {
             "value": false
