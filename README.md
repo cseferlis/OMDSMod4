@@ -29,6 +29,8 @@ Ensure you have a Microsoft Azure student account. Instructions for setup of env
 
 ### The following instructions are for setting up your Azure environment homework resources to ensure proper service deployment and minimum expenditure. Similar to many organizations, each Azure service option has an SKU assigned with availability dictated by capacity and resources within each Azure region. For each asssignment where resources do not have manual instructions for deployment, you will use the following instructions and specify each homework assignment in the details of the deployment. If you run into trouble, please work with your Learning Facilitator for assistance. These instructions assume you have created your Azure account, and deployed the necessary resources in Homework 1a as you move on to subsequent assignments. If not, please head over there first before continuing.
 
+> For this course, you will use the “Azure for Students” offer provided by Microsoft. This offer allows for a $100 credit that can be replenished once a year as long as a student email address is being used. You will be expected to manage your budget. By adhering closely to the instructions outlined in the homework assignments, you will remain within the $100 credit limit. However, any expenses incurred beyond this allocation will be your responsibility.  
+
 1. **Sign In**: Log into the [Azure Portal](https://portal.azure.com) with your student account.
 2. **Access Cloud Shell**: 
    - Use the **[>_]** button next to the search bar to open a new Cloud Shell.
