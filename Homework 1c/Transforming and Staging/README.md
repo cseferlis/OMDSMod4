@@ -2,7 +2,9 @@
 
 **Class,**
 
-> **NOTE** - Homework 1c builds on your activities in Homework 1b (Extract and Load). You will be using the same `resource group` and `data-factory` from the previous assignment. If you could not complete Homework 1b due to difficulties, please reach out to LF Office Hours for assistance before starting this assignment.
+In Homework 1a and 1b you created some of the Azure services being used for the semester assignments, then grabbed our source data from the NHTSA website, uzipped that data to a `.txt` file and placed the file in storage for further use. Now we culminate our first homework assignment, Homework 1c. Here we will take all the work done to date, and complete the assignment to be graded.
+
+> **NOTE** - Homework 1c builds on your activities in Homework 1b (Extract and Load). You will be using the same `Resource Group` and `Data-Factory` from the previous assignment. If you could not complete Homework 1b due to difficulties, please reach out to your LF Office Hours for assistance before starting this assignment.
 
 In Homework 1b, you extracted and loaded a data file into your storage account. For Homework 1c, you will extend that work by transforming and moving data from a `.txt` file into a SQL Server database table. Refer to the appendix of this [reference document](https://static.nhtsa.gov/odi/ffdd/cmpl/Import_Instructions_Excel_All.pdf) for details on datatypes and fields.
 
@@ -14,8 +16,10 @@ Using your existing Data Factory, you will:
 
 ## Steps to Complete Homework 1c
 
+> For this course, you will use the “Azure for Students” offer provided by Microsoft. This offer allows for a $100 credit that can be replenished once a year as long as a student email address is being used. You will be expected to manage your budget. By adhering closely to the instructions outlined in the homework assignments, you will remain within the $100 credit limit. However, any expenses incurred beyond this allocation will be your responsibility.  
+
 ### Step 1: Set Up Your SQL Server and Database
-Once again, you should use the `bash fromTemplate.sh` script for creating your SQL Server, using the following command to deploy resources, remembering to replace your resource group, template and parameter details as with Homework 1b:
+Once again, you should use the `bash fromTemplate.sh` script from the [top-level ReadMe.md file](https://github.com/cseferlis/OMDSMod4/blob/main/README.md) for creating your SQL Server, using the following command to deploy resources, remembering to replace your resource group, template and parameter details as with Homework 1b:
 
 ```azurecli-interactive
 az deployment group create --resource-group <resource-group-name> --template-file <path-to-template.json> --parameters @<path-to-parameters.json>
