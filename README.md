@@ -67,7 +67,7 @@ This command will use a predefined template to create resources as required for 
    ```bash
    az deployment group create --resource-group OMDSMod4 --template-file ./homework1/azuredeploy.json --parameters @./homework1/azuredeploy.parameters.json
    ```
-
+> Note: Your Resource Group should be the name of the one entered from the one you create in Homework 1a. This will ensure you always deploy resources to the same region as what is specified with the Resource Group. This is handled within the template.json file.
 
 ---
 
