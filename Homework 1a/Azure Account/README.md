@@ -6,6 +6,8 @@ Welcome to Homework 1! This cumulative assignment (Homework 1a-1c) will take you
 
 This Homework 1a assignment introduces you to the Microsoft Azure platform, where you’ll set up your student account, create a resource group, and establish a storage account that will serve as a foundational element for upcoming assignments. You will be able to access the video posted to Blackboard for a video I recorded providing a high-level overview.
 
+> For this course, you will use the “Azure for Students” offer provided by Microsoft. This offer allows for a $100 credit that can be replenished once a year as long as a student email address is being used. You will be expected to manage your budget. By adhering closely to the instructions outlined in the homework assignments, you will remain within the $100 credit limit. However, any expenses incurred beyond this allocation will be your responsibility.
+
 ## Overview
 In this assignment, you will:
 1. Set up a Microsoft Azure student account.
