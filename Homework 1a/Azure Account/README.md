@@ -41,7 +41,7 @@ Azure Resource Groups allow you to organize and manage resources like virtual ma
 
 ### Resource Group Requirements:
 - **Name**: Choose a meaningful name, like `Mod4_Homework` or something else you feel is appropriate that will help identify what the RG is for when traversing the Azure Portal.
-- **Region**: Select a region close to you or one recommended by Azure.
+- **Region**: Select a region close to you or one recommended by Azure. By default, most resources following this assignment will be deployed via template based on the region you choose for your Resource Group. If you have to cross regions with data, there can be additional charges for data egress, and there could be additional latency. 
 
 ### Step 3: Create a Storage Account
 
