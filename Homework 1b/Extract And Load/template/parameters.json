@@ -11,10 +11,6 @@
         "version": {
             "value": "V2"
         },
-        "location": {
-            "defaultValue": "[resourceGroup().location]",
-            "type": "string"
-        },
         "vNetEnabled": {
             "value": false
         },
