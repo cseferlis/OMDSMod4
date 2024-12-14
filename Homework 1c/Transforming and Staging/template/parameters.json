@@ -44,12 +44,6 @@
         "allowAzureIps": {
             "value": true
         },
-        "allowClientIp": {
-            "value": true
-        },
-        "clientIpValue": {
-            "value": "38.42.238.171"
-        },
         "databaseTags": {
             "value": {}
         },
