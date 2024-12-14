@@ -15,6 +15,8 @@ For this assignment, you will be working with the National Highway Traffic Safet
 
 > **Important**: All steps must be completed using Azure Data Factory tools—manual operations are not allowed.
 
+> For this course, you will use the “Azure for Students” offer provided by Microsoft. This offer allows for a $100 credit that can be replenished once a year as long as a student email address is being used. You will be expected to manage your budget. By adhering closely to the instructions outlined in the homework assignments, you will remain within the $100 credit limit. However, any expenses incurred beyond this allocation will be your responsibility.  
+
 ## Instructions
 
 ### Step-by-Step Guide
@@ -45,7 +47,7 @@ As discussed, we will be using Complaints Data from NHTSA for the majority of th
 - **Complaints Reference File**: [Reference Document](https://static.nhtsa.gov/odi/ffdd/cmpl/Import_Instructions_Excel_All.pdf)
 
 ## Using Deployment Template
-For any resource deployment, use the following command. Replace placeholders with your specific resource group and file paths as discussed in the [Top-Level Readme File:](https://github.com/cseferlis/OMDSMod4/blob/main/README.md)
+For any resource deployment, use the following command. Replace placeholders with your specific resource group and file paths as discussed in the [Top-Level Readme File. ](https://github.com/cseferlis/OMDSMod4/blob/main/README.md) Be sure to Navigate to your specific homework folder, in this case "Homework 1b" and the folder containing the "formTemplate.sh" file to ensure proper deployment of resources.
 
 ```azurecli-interactive
 az deployment group create --resource-group <resource-group-name> --template-file <path-to-template.json> --parameters @<path-to-parameters.json>

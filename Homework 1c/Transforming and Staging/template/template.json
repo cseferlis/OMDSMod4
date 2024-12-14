@@ -27,6 +27,7 @@
             "type": "string"
         },
         "location": {
+            "defaultValue": "[resourceGroup().location]",
             "type": "string"
         },
         "maxSizeBytes": {

@@ -14,9 +14,6 @@
         "skuName": {
             "value": "S0"
         },
-        "location": {
-            "value": "eastus2"
-        },
         "maxSizeBytes": {
             "value": 268435456000
         },

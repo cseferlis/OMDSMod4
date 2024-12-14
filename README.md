@@ -48,6 +48,10 @@ Ensure you have a Microsoft Azure student account. Instructions for setup of env
    - After cloning, switch to the main folder for the exercises:
    ```bash
    cd OMDSMod4
+
+   cd  '<Homework Folder>'
+
+   cd '<Homework Name Folder>'
    ```
 5. **Running Setup Scripts**:
    - Navigate to the specific `homework` directory you’re working on and run the setup script to generate necessary files:
@@ -63,9 +67,9 @@ This command will use a predefined template to create resources as required for 
    ```bash
    az deployment group create --resource-group <resource-group-name> --template-file <path-to-template.json> --parameters @<path-to-parameters.json>
    ```
-   Example:
+   For Example:
    ```bash
-   az deployment group create --resource-group OMDSMod4 --template-file ./homework1/azuredeploy.json --parameters @./homework1/azuredeploy.parameters.json
+   az deployment group create --resource-group cbsomdsrg --template-file ./homework1/azuredeploy.json --parameters @./homework1/azuredeploy.parameters.json
    ```
 > Note: Your Resource Group should be the name of the one entered from the one you create in Homework 1a. This will ensure you always deploy resources to the same region as what is specified with the Resource Group. This is handled within the template.json file.
 
