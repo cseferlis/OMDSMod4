@@ -25,7 +25,7 @@ Please follow the steps carefully and use the provided links for guidance on eac
 To access Azure resources, you’ll need to set up a Microsoft Azure student account. This will give you free access to essential Azure services, which you’ll use throughout the course.
 
 1. Visit the [Azure for Students page](https://azure.microsoft.com/en-us/free/students/).
-2. Click on **Activate Now**.
+2. Click on **Activate Now** or **Start Free**.
 3. Register using your `@bu.edu` email address to ensure you receive student benefits.
 4. Complete the registration process as prompted on the Azure website.
 
