@@ -42,9 +42,11 @@ Set up your Azure Synapse Workspace by following these steps:
 
 Ensure the `.parquet` files created from the NHTSA data are accessible in your Synapse Workspace. This will be essential for the subsequent homework.
 
-## Before going to Homework 3b:
+## Submission
 
-Upon completion of Homework 3a, submit the following as proof of your work:
+> Submit the following as proof of your work:
+
+**IMPORTANT:** Ensure your BU account information is visible in the top right corner of your screenshots for verification.
 
 1. **Screenshot of Your Synapse Workspace**:
    - <img src="../../images/hw3a/hw6-synapse.png" alt="Screenshot" width="400">
