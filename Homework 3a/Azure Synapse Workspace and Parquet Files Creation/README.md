@@ -44,7 +44,7 @@ Ensure the `.parquet` files created from the NHTSA data are accessible in your S
 
 ## Before going to Homework 3b:
 
-Your development should include the following:
+Upon completion of Homework 3a, submit the following as proof of your work:
 
 1. **Screenshot of Your Synapse Workspace**:
    - <img src="../../images/hw3a/hw6-synapse.png" alt="Screenshot" width="400">
