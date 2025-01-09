@@ -14,6 +14,8 @@ Using your existing Data Factory, you will:
 1. **Transform**: Convert the `DateA` column datatype from text to date.
 2. **Stage**: Load the transformed data into a database table named `<initials>Complaints` within a SQL Server database.
 
+> **Hint** Download the Homework1c.pdf file from the ‘Transforming and Staging’ folder in this repository and review its contents.
+
 ## Steps to Complete Homework 1c
 
 > For this course, you will use the “Azure for Students” offer provided by Microsoft. This offer allows for a $100 credit that can be replenished once a year as long as a student email address is being used. You will be expected to manage your budget. By adhering closely to the instructions outlined in the homework assignments, you will remain within the $100 credit limit. However, any expenses incurred beyond this allocation will be your responsibility.  
@@ -58,9 +60,11 @@ Output the results to a file and save it as a PDF for submission.
 
 ---
 
-## Verification and Submission
+## Submission
 
-Upon completion, submit the following as proof of your work:
+> Submit the following as proof of your work:
+
+**IMPORTANT:** Ensure your BU account information is visible in the top right corner of your screenshots for verification.
 
 1. **Screenshot of Query Execution in Azure SQL Database** 
    - <img src="../../images/hw1c/hw3-screenshot.png" alt="Screenshot" width="400">
