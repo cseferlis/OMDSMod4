@@ -56,11 +56,16 @@ The storage account will be used for data storage in future assignments, serving
 - **Performance**: Choose **Standard**.
 - **Replication**: Select **Locally-redundant storage (LRS)**, which is sufficient for this course.
 
+### Step 4: Create a Storage Container
+
+1. In the Azure Portal, navigate to the **Storage Account** you just created.
+2. Use this article to guide you in creating a storage container within your storage account: [Create an Azure Storage Container](https://learn.microsoft.com/en-us/azure/storage/blobs/storage-quickstart-blobs-portal#create-a-container).
+
 ---
 
 ## Verification of Correctness and Completeness
 
-Upon completion, your output should look like the following image.
+Upon completion, submit the following as proof of your work:
 
 1. **Screenshot of the Storage Account** within the resource group.
    - <img src="../../images/hw1a/hw1-screenshot.png" alt="Screenshot" width="400">
