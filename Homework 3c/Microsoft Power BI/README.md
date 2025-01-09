@@ -49,9 +49,9 @@ Your report should consist of the following interactive pages:
 - Include interactive elements such as slicers or filters to enhance the user experience.
 
 ## Submission
-Ensure your BU account information is visible in the top right corner of your screenshots for verification.
 
-Your submission should include:
+**Ensure your BU account information is visible in the top right corner of your screenshots for verification.**
+Submit the following as proof of your work:
 
 1. **Screenshot of your Snowflake Schema data model**:
    - <img src="../../images/hw3c/datamodel.png" alt="Screenshot" width="400">
