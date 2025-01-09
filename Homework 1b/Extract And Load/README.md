@@ -24,18 +24,24 @@ For this assignment, you will be working with the National Highway Traffic Safet
 ### Step-by-Step Guide
 1. **Set Up Azure Data Factory**:
    - Ensure that you have created your Azure account and storage account in order to create an Azure Data Factory instance.
-   - Follow this guide to get started: [Getting Started with Azure Data Factory](https://learn.microsoft.com/en-us/azure/data-factory/quickstart-create-data-factory)
+   - You should use the `bash fromTemplate.sh` script from the [top-level ReadMe.md file](https://github.com/cseferlis/OMDSMod4/blob/main/README.md) for creating your Data Factory, using the following command to deploy resources, remembering to replace your resource group, template and parameter details as with Homework 1b:
 
-2. **Extract the Data**:
+   ```azurecli-interactive
+   az deployment group create --resource-group <resource-group-name> --template-file <path-to-template.json> --parameters @<path-to-parameters.json>
+   ```
+   
+   - Follow this guide to learn about Azure Data Factory: [Getting Started with Azure Data Factory](https://learn.microsoft.com/en-us/azure/data-factory/quickstart-create-data-factory)
+
+3. **Extract the Data**:
    - Use Azure Data Factory to create a pipeline that extracts the data from the `Complaints` data source.
    - The data is available at the following link: [Complaints Data File](https://static.nhtsa.gov/odi/ffdd/cmpl/FLAT_CMPL.zip)
    - Hint: Treat the data source as an HTTPS-linked dataset within ADF. [HTTP endpoint in Data Factory](https://learn.microsoft.com/en-us/azure/data-factory/connector-http?tabs=data-factory)
 
-3. **Load the Data**:
+4. **Load the Data**:
    - Use ADF's copy activity to transfer the `.zip` file from the HTTPS source to your Azure Storage container created in Homework 1a with Blob Storage enabled.
    - Reference: [How to Create a Storage Account](https://learn.microsoft.com/en-us/azure/storage/common/storage-account-create?tabs=azure-portal)
 
-4. **Unzip the File**:
+5. **Unzip the File**:
    - Use another ADF's copy activity to unzip the file within the pipeline. Ensure that the extracted content is in `.txt` format and stored in your Azure Storage account.
    - Follow tutorials and documentation from Microsoft for guidance on data transformation and extraction. You can start with this [Quickstart](https://learn.microsoft.com/en-us/azure/data-factory/quickstart-hello-world-copy-data-tool)
 
