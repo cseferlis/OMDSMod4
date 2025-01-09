@@ -63,7 +63,7 @@ The storage account will be used for data storage in future assignments, serving
 
 ---
 
-## Verification of Correctness and Completeness
+## Submission
 
 > Submit the following as proof of your work:
 
