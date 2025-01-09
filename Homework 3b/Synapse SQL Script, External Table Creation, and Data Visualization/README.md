@@ -46,7 +46,11 @@ Create an external table in Azure Synapse, use Synapse SQL scripts to read `.par
   - Use the query results to create a visual representation of the data.
   - This can be a bar chart or line graph that displays the number of crashes per year.
 
-## Completion
+## Submission
+
+> Submit the following as proof of your work:
+
+**IMPORTANT:** Ensure your BU account information is visible in the top right corner of your screenshots for verification.
 
 1. **What your SQL Query and Plot should look like**:
    - <img src="../../images/hw3b/hw7-screenshot.png" alt="Screenshot" width="400">
