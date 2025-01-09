@@ -66,7 +66,8 @@ The storage account will be used for data storage in future assignments, serving
 ## Verification of Correctness and Completeness
 
 > Submit the following as proof of your work:
-> **Ensure your BU account information is visible in the top right corner of your screenshots for verification.**
+
+**IMPORTANT:** Ensure your BU account information is visible in the top right corner of your screenshots for verification.
 
 1. **Screenshot of the Storage Account** within the resource group.
    - <img src="../../images/hw1a/hw1-screenshot.png" alt="Screenshot" width="400">
