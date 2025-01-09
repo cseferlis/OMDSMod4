@@ -57,9 +57,11 @@ az deployment group create --resource-group <resource-group-name> --template-fil
 
 ---
 
-## Verification of Correctness and Completion
+## Submission
 
-Upon completion, submit the following as proof of your work:
+> Submit the following as proof of your work:
+
+**IMPORTANT:** Ensure your BU account information is visible in the top right corner of your screenshots for verification.
 
 1. **Screenshot of the data file extracted in the storage account** 
    - <img src="../../images/hw1b/container.png" alt="Screenshot" width="400">
