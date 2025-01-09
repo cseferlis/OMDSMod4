@@ -15,7 +15,9 @@ For this assignment, you will be working with the National Highway Traffic Safet
 
 > **Important**: All steps must be completed using Azure Data Factory tools—manual operations are not allowed.
 
-> For this course, you will use the “Azure for Students” offer provided by Microsoft. This offer allows for a $100 credit that can be replenished once a year as long as a student email address is being used. You will be expected to manage your budget. By adhering closely to the instructions outlined in the homework assignments, you will remain within the $100 credit limit. However, any expenses incurred beyond this allocation will be your responsibility.  
+> For this course, you will use the “Azure for Students” offer provided by Microsoft. This offer allows for a $100 credit that can be replenished once a year as long as a student email address is being used. You will be expected to manage your budget. By adhering closely to the instructions outlined in the homework assignments, you will remain within the $100 credit limit. However, any expenses incurred beyond this allocation will be your responsibility.
+
+> **Hint** Download the Homework1b.pdf file from the ‘Extract And Load’ folder in this repository and review its contents.
 
 ## Instructions
 
@@ -27,14 +29,14 @@ For this assignment, you will be working with the National Highway Traffic Safet
 2. **Extract the Data**:
    - Use Azure Data Factory to create a pipeline that extracts the data from the `Complaints` data source.
    - The data is available at the following link: [Complaints Data File](https://static.nhtsa.gov/odi/ffdd/cmpl/FLAT_CMPL.zip)
-   - Hint: Treat the data source as an HTTPS-linked dataset within ADF.
+   - Hint: Treat the data source as an HTTPS-linked dataset within ADF. [HTTP endpoint in Data Factory](https://learn.microsoft.com/en-us/azure/data-factory/connector-http?tabs=data-factory)
 
 3. **Load the Data**:
    - Use ADF's copy activity to transfer the `.zip` file from the HTTPS source to your Azure Storage container created in Homework 1a with Blob Storage enabled.
    - Reference: [How to Create a Storage Account](https://learn.microsoft.com/en-us/azure/storage/common/storage-account-create?tabs=azure-portal)
 
 4. **Unzip the File**:
-   - Use ADF's built-in tools to unzip the file within the pipeline. Ensure that the extracted content is in `.txt` format and stored in your Azure Storage account.
+   - Use another ADF's copy activity to unzip the file within the pipeline. Ensure that the extracted content is in `.txt` format and stored in your Azure Storage account.
    - Follow tutorials and documentation from Microsoft for guidance on data transformation and extraction. You can start with this [Quickstart](https://learn.microsoft.com/en-us/azure/data-factory/quickstart-hello-world-copy-data-tool)
 
 ## Reference Files and Tutorials
@@ -57,7 +59,7 @@ az deployment group create --resource-group <resource-group-name> --template-fil
 
 ## Verification of Correctness and Completion
 
-Upon completion, your output should look like the following images:
+Upon completion, submit the following as proof of your work:
 
 1. **Screenshot of the data file extracted in the storage account** 
    - <img src="../../images/hw1b/container.png" alt="Screenshot" width="400">
