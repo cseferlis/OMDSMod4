@@ -65,9 +65,11 @@ For this assignment, you will use the TMDB dataset for 5000 movies. The cleaned 
       - **Important**: Do not clean up resources in the final step—the database should remain active.
 ---
 
-## Verification and Submission
+## Submission
 
-Upon completion, submit the following as proof of your work:
+> Submit the following as proof of your work:
+
+**IMPORTANT:** Ensure your BU account information is visible in the top right corner of your screenshots for verification.
 
 1. **Two Screenshots of the Following Query Execution** 
    - <img src="../../images/hw2/hw4-screenshot1.png" alt="Screenshot" width="400">
