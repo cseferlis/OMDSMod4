@@ -24,7 +24,7 @@ Using your existing Data Factory, you will:
 Once again, you should use the `bash fromTemplate.sh` script from the [top-level ReadMe.md file](https://github.com/cseferlis/OMDSMod4/blob/main/README.md) for creating your SQL Server, using the following command to deploy resources, remembering to replace your resource group, template and parameter details as with Homework 1c:
 
 ```azurecli-interactive
-az deployment group create --resource-group <resource-group-name> --template-file <path-to-template.json> --parameters @<path-to-parameters.json>
+az deployment group create --resource-group <resource-group-name> --template-file <path-to-template.json> --parameters <path-to-parameters.json>
 ```
 
 ### Step 2: Create Your Database Table
