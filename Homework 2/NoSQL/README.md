@@ -87,6 +87,6 @@ Save the screenshots as `.png` or `.jpg` files and upload them through the cours
 
 ## Additional Tips
 - Take your time to verify that your data has been successfully loaded and that your database structure matches the expected configuration.
-- Use Piazza for questions and collaborate with classmates to troubleshoot and share solutions.
+- Use Yellowdig and BU Virtual Campus for questions and collaborate with classmates to troubleshoot and share solutions.
 
 Good luck, and enjoy working with CosmosDB!
