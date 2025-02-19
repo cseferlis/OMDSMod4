@@ -12,7 +12,7 @@ Read more about CosmosDB and its capabilities [here](https://learn.microsoft.com
 ## Assignment Overview
 Building on Homework 1, where you extracted and loaded data into your Azure storage account, you will now work with a NoSQL database to load and manipulate complex data structures with nested attributes.
 
-For this assignment, you will use the TMDB dataset for 5000 movies. The cleaned version of this dataset is hosted [here](https://data.koley.in/tmdb_5000_movies.json).
+For this assignment, you will use the TMDB dataset for 5000 movies. The cleaned version of this dataset is hosted [here](https://mod4.blob.core.windows.net/hw2/tmdb_5000_movies.json).
 
 ### Steps to Complete Homework 2
 
@@ -35,7 +35,7 @@ For this assignment, you will use the TMDB dataset for 5000 movies. The cleaned 
    > **Note:** you may have to play with the configuration of Manual and Auto Scaling to get the appropriate free tier of the database. make sure to use caution when setting the R/U Compute as an incorrect setting can cause cost overruns, expending your free credits.
 
 3. **Extract Data Using Azure Data Factory (ADF)**:
-   - Create a new ADF pipeline to grab the JSON file from the provided link: [TMDB Dataset](https://data.koley.in/tmdb_5000_movies.json).
+   - Create a new ADF pipeline to grab the JSON file from the provided link: [TMDB Dataset](https://mod4.blob.core.windows.net/hw2/tmdb_5000_movies.json).
 
 4. **Load the Data**:
    - Use ADF's copy tool to load the JSON data from the online link into the `movies` container in CosmosDB.
