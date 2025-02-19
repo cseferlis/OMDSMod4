@@ -16,10 +16,7 @@ For this assignment, you will use the TMDB dataset for 5000 movies. The cleaned 
 
 ### Steps to Complete Homework 2
 
-1. **Extract Data Using Azure Data Factory (ADF)**:
-   - Create a new ADF pipeline to grab the JSON file from the provided link: [TMDB Dataset](https://data.koley.in/tmdb_5000_movies.json).
-
-2. **Set Up Azure CosmosDB**:
+1. **Set Up Azure CosmosDB**:
    - Follow this [tutorial](https://learn.microsoft.com/en-us/azure/cosmos-db/nosql/quickstart-portal) to learn how to deploy a CosmosDB instance.
      
    - To deploy resources run the template from the repository using the following command from the Azure CLI, remembering to replace the resource group, template and parameters for your environment:
@@ -30,12 +27,15 @@ For this assignment, you will use the TMDB dataset for 5000 movies. The cleaned 
      az deployment group create --resource-group <resource-group-name> --template-file <path-to-template.json> --parameters @<path-to-parameters.json>
      ```
 
-3. **Create the Database and Container**:
+2. **Create the Database and Container**:
    - **Database ID**: `omdsmod4`
    - **Container ID**: `movies`
    - **Partition Key**: Use `status` as the partition key.
    - **Throughput**: Set to Manual and configure at 400 RU/s or whatever the "Free" tier is. 
    > **Note:** you may have to play with the configuration of Manual and Auto Scaling to get the appropriate free tier of the database. make sure to use caution when setting the R/U Compute as an incorrect setting can cause cost overruns, expending your free credits.
+
+3. **Extract Data Using Azure Data Factory (ADF)**:
+   - Create a new ADF pipeline to grab the JSON file from the provided link: [TMDB Dataset](https://data.koley.in/tmdb_5000_movies.json).
 
 4. **Load the Data**:
    - Use ADF's copy tool to load the JSON data from the online link into the `movies` container in CosmosDB.
