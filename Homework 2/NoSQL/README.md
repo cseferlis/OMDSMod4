@@ -53,7 +53,7 @@ For this assignment, you will use the TMDB dataset for 5000 movies. The cleaned 
    - This should return 26 movie titles tagged with "artificial intelligence." If your result matches, your work is correct.
 
 6. **Modify and Run an Additional Query**:
-   - Now take what you have learned to modify the above query to find movies produced by the **"Dentsu"** production company starting with the query structure below. There should be 12 records returned as refereced in the image required for submission:
+   - Now take what you have learned to modify the above query to find movies produced by the **"Dentsu"** production company starting with the query structure below. There should be 12 records returned as referenced in the image required for submission:
      ```sql
      SELECT c.title 
      FROM movies AS c 
