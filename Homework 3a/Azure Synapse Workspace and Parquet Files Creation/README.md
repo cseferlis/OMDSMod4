@@ -60,10 +60,7 @@ Ensure the `.parquet` files created from the NHTSA data are accessible in your S
 
 > Upon completion, your output should look like the following image.
 
-1. **Synapse Workspace**:
-   - <img src="../../images/hw3a/hw6-synapse.png" alt="Screenshot" width="400">
-
-2. **Storage Container**:
+1. **Storage Container View on Synapse Workspace**:
    - <img src="../../images/hw3a/hw6-data.png" alt="Screenshot" width="400">
 
 
