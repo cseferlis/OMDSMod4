@@ -8,8 +8,22 @@ In this assignment, we are getting back to our NHTSA data where you will begin w
 
 ### 1. Upgrade Your Storage Account
 
-To link your Synapse Workspace to a storage account, it may need to be upgraded to ADLS Gen 2 if you didn't set it up on your original deployment. If so (else go to #2):
-- **Enable Hierarchical Namespace**: Navigate to your storage account overview, and under the Data Lake Storage heading, enable the hierarchical namespace option.
+To link your **Synapse Workspace** to a storage account, it may need to be **upgraded to Azure Data Lake Storage (ADLS) Gen 2** if it wasn't set up during the initial deployment. If your storage account is not already upgraded, follow these steps:
+
+   1. **Navigate to your Storage Account** in the Azure Portal.
+   2. In the **left-hand menu**, go to **Settings** > **Data Lake Gen2 upgrade**.
+   3. Click **Review and agree to changes** to proceed with the upgrade.
+   4. **Validate your account** to check for any features that may not be supported.
+      - ⚠ **If you see an error related to `containerDeleteRetentionPolicy`, follow these steps to fix it:**
+        - Go to **Data management** > **Data protection** in your storage account.
+        - Locate any **Container delete retention policy** setting and **disable all of them**.
+        - Save the changes.
+        - Return to **Settings** > **Data Lake Gen2 upgrade** and retry the **Start validation** process.
+   5. Once validation is complete, **start the upgrade** process.
+      - Note: The upgrade may take some time, and your storage account will be temporarily offline.
+   6. After the upgrade, confirm that **Hierarchical Namespace** is enabled under **Configuration**.
+
+Once your storage account is upgraded, proceed to the next step of the assignment.
 
 ### 2. Convert the NHTSA TXT File to Parquet Format
 
