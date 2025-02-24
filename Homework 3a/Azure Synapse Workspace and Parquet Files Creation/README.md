@@ -22,7 +22,7 @@ To link your **Synapse Workspace** to a storage account, it may need to be **upg
 Use **Azure Data Factory (ADF) Data Flows** to perform the following steps:
 
 - Hint:
-- ![Screenshot](../../images/hw3a/dataflow.png)
+- ![Dataflow](../../images/hw3a/dataflow.png)
 
 1. **Set Up a Data Flow**:
    - Configure the NHTSA TXT file from Homework 1b as the data source.
@@ -56,7 +56,7 @@ Ensure the `.parquet` files created from the NHTSA data are **accessible in your
 > Upon completion, your output should look like the following image:
 
 1. **Storage Container View on Synapse Workspace**:
-   - ![Screenshot](../../images/hw3a/hw6-data.png)
+   - ![Storage Container](../../images/hw3a/hw6-data.png)
 
 ---
 
@@ -82,7 +82,7 @@ If you run into issues while completing the assignment, consider these common **
     ```
     !endsWith({_col2_}, ".")
     ```
-  - ![Screenshot](../../images/hw3a/filter.png)
+  - ![Filter](../../images/hw3a/filter.png)
 
 ### 3. **Setting Up Derived Columns**
 - **Issue:** Parquet files are missing `.parquet` extension in their filenames.
@@ -91,7 +91,7 @@ If you run into issues while completing the assignment, consider these common **
     ```
     concat({_col2_}, '.parquet')
     ```
-  - ![Screenshot](../../images/hw3a/derived.png)
+  - ![Derived](../../images/hw3a/derived.png)
 
 ### 4. **Setting Up Partitioning**
 - **Issue:** Partitioning based on column data is not working.
@@ -100,7 +100,7 @@ If you run into issues while completing the assignment, consider these common **
   - There are **two partitioning options** for sink in Azure Data Factory:
     - **File Name as Column Data** → **Files** named after the **Manufacturer**. → **This is Correct**
     - **Set Partitioning - Key** → **Folders** named after the **Manufacturer**. → This is Incorrect
-  - ![Screenshot](../../images/hw3a/partition.png)
+  - ![Partitioning](../../images/hw3a/partitioning.png)
 
 ### 5. **Synapse Storage Link Issues**
 - **Issue:** Parquet files are **not appearing** in **Synapse Analytics**.
