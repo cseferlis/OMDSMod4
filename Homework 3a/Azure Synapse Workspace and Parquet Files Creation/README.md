@@ -76,11 +76,13 @@ If you run into issues while completing the assignment, consider these common **
 - **Fix:**  
   - Use a **filter transformation** in Azure Data Factory (ADF) to remove these rows:
     ```
-    right({_col2_}, 1) != '.'
+    right({column_name}, 1) != '.'
+    # column_name must be edited with the proper column name
     ```
     or
     ```
-    !endsWith({_col2_}, ".")
+    !endsWith({column_name}, ".")
+    # column_name must be edited with the proper column name
     ```
   - ![Filter](../../images/hw3a/filter.png)
 
@@ -89,7 +91,8 @@ If you run into issues while completing the assignment, consider these common **
 - **Fix:**  
   - Use a **Derived Column** transformation in ADF to append `.parquet` to each filename:
     ```
-    concat({_col2_}, '.parquet')
+    concat({column_name}, '.parquet')
+    # column_name must be edited with the proper column name
     ```
   - ![Derived](../../images/hw3a/derived.png)
 
