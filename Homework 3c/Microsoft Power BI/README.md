@@ -13,23 +13,30 @@ In Homework 3c, you will connect to your Synapse environment from PowerBI and vi
 - **Windows users** should download and install Power BI Desktop on their local machine for use.
 
 #### Mac Users
-- **Mac users** can access Power BI via **Azure Virtual Desktop** using the **Remote Desktop Client**. Follow this guide for setup: [Azure Virtual Desktop Connection for macOS](https://learn.microsoft.com/en-us/azure/virtual-desktop/users/connect-macos).
+- **Mac users** can access Power BI via **Azure Virtual Desktop** using the **Windows App**. Follow this guide for setup: [Azure Virtual Desktop Connection for macOS](https://learn.microsoft.com/en-us/windows-app/get-started-connect-devices-desktops-apps).
 
 - **Configure Folder Redirection** to enable access to local folders on your virtual machine:
   - Refer to the following tutorial for folder redirection: [Folder Redirection Guide](https://bowdoin.teamdynamix.com/TDClient/1814/Portal/KB/ArticleDet?ID=132977).
    - <img src="../../images/hw3c/1.png" alt="Screenshot" width="400">
    - <img src="../../images/hw3c/2.png" alt="Screenshot" width="400">
 
-### 2. Create the Final Power BI Report
+### 2. Create a Power BI Report
 Refer to the [Power BI Report Creation Tutorial](https://learn.microsoft.com/en-us/power-bi/create-reports/desktop-dimensional-model-report) for assistance.
 
-Your report should consist of the following interactive pages:
+- **Step 1: Get the Data from Azure Synapse**
+  - Navigate to the PowerBI app on the Windows App
+  - Click 'Get data from another source ->'
+  - Select 'Azure Synapse Analytics SQL'
+  - **How to find the Server name**
+    - Navigate to Azure Synapse and find the 'Serverless SQL endpoint'
+    - Copy and paste as an input for 'Server'
+  - 'Import' for Data Connectivity Mode
+  - Select 'Microsoft Account' and login to your Azure account
+  - Load the external table from Homework 3c.
 
-1. 
-
-### Additional Requirements:
-- Ensure the layout of each report page matches the provided screenshots.
-- Include interactive elements such as slicers or filters to enhance the user experience.
+- **Step 2: Create your own Power BI Report**
+  - Your report should consist of the following features (Your homework submission will be graded based on whether you fulfilled these requirements):
+    1. 
 
 ## Submission
 
