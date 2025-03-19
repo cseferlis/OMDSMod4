@@ -11,53 +11,77 @@ Create an external table in Azure Synapse, use Synapse SQL scripts to read `.par
 
 ### 1. Set Up ACL Permissions and Synapse Administration
 
-- **Set Access Control List (ACL) Permissions**:
-  - Configure ACL permissions for your storage account container where the `.parquet` file is stored.
-  - Ensure that read, write, and execute permissions are granted to your email address associated with the assignment.
-  - Use this [resource](https://learn.microsoft.com/en-us/azure/storage/blobs/data-lake-storage-acl-azure-portal) for guidance on setting up ACL permissions.
+- **Set Access Control List (ACL) Permissions** (Azure Data Lake Storage Gen2):
+  - Navigate to your storage container in Azure.
+  - Right-click your data folder and select **Manage ACL**.
+  - Check that **Read, Write, and Execute** permissions are granted to your account.
+  - Reference: [Azure ACL Documentation](https://learn.microsoft.com/en-us/azure/storage/blobs/data-lake-storage-acl-azure-portal).
 
 - **Assign Synapse Administrator Permissions**:
-  - In Azure Synapse Studio, navigate to ‘Manage’, select ‘Access Control’, and assign yourself ‘Synapse Administrator’ permissions to manage resources effectively.
+  - Open Azure Synapse Studio → **Manage → Access Control**.
+  - Assign yourself the **Synapse Administrator** role.
+
+> **⚠️ Note:** Permissions might already be configured. Double-check before modifying.
 
 ### 2. Create an External Table
 
-- **Navigate to the ‘Data’ Hub**:
-  - Go to the ‘Data’ section in Azure Synapse Studio and locate the option to create an external table.
+  - **Step 1: Locate the Ford Parquet File**
+    - Open **Azure Synapse Studio**.
+    - Navigate to the **Data** tab on the left-hand panel.
+    - Locate the file named `'Ford Motor Company.parquet'`.
+    - Right-click the dataset and select **Create External Table**.
+  
+  - **Step 2: Configure External Table Settings**
+    - Use the [Azure Synapse External Table Documentation](https://learn.microsoft.com/en-us/azure/synapse-analytics/sql/develop-tables-external-tables?tabs=hadoop) as a reference if needed.
+    - Ensure the external table schema accurately matches the structure of your `.parquet` file to avoid schema mismatch errors.  
+      - **Important:** If you completed Homework 3a correctly, the **Field terminator** should be set to `comma`.
+  
+  - **Step 3: Define Database and External Table**
+    - Provide a clear and descriptive name for your database.
+    - Assign a meaningful name for your external table (e.g., `FordCrashesExternalTable`).
+  
+  - **Step 4: SQL Script Adjustments**
+    - When prompted, choose the option **Using SQL Script** for creating the external table.
+    - Carefully edit the auto-generated `CREATE EXTERNAL TABLE` SQL script:
+      - Replace all instances of data type `'bigint'` with `'nvarchar(4000)'` to prevent type conflicts or errors.
+  
+  - **Step 5: Execute and Validate**
+    - After editing the script, click **Run**.
+    - Wait until the query execution completes successfully.
+    - Refresh your workspace view to verify:
+      - The newly created **database** appears.
+      - The external table you defined is listed within that database.
+  
+  - You're now ready to query your external table!
 
-- **Create the External Table**:
-  - Use the [Azure Synapse Analytics documentation](https://learn.microsoft.com/en-us/azure/synapse-analytics/sql/develop-tables-external-tables?tabs=hadoop) as a reference.
-  - Link the external table to the `.parquet` file containing the NHTSA data.
-  - Ensure that the schema of the external table matches the structure of your `.parquet` file to avoid errors.
+### 3. Data Analysis (SQL Query Instructions)
 
-### 3. Execute SQL Queries on Parquet Files
+  - Write a new SQL query to extract **Ford crash data specifically for 1990–2010**:
 
-- **Write and Run SQL Scripts**:
-  - Use the SQL script editor in Synapse Studio to create and execute queries on the external table.
-  - Confirm that the SQL queries accurately address and query data from the `.parquet` files.
+    #### 🔹 Query Requirements:
+    - **Years:** Between 1990 and 2010
+    - **Crash Indicator:** Only crashes (`Crash = 'Y'`)
+    - **Aggregate:** Count crashes per year
+    - **Sort:** Ascending by year
+   
+  > **⚠️ Note:** Refer to the [Complaints Reference File](https://static.nhtsa.gov/odi/ffdd/cmpl/Import_Instructions_Excel_All.pdf) to find the correct columns.
 
-### 4. Data Analysis
+  > If you encounter an “Invalid object name” error, verify you’re selecting the correct database from the Use database dropdown (do not use the default 'master').
 
-- **Extract Specific Data**:
-  - Focus on extracting crash data for the Ford F-150 from 1990 to 2010.
-  - Your query should filter the data based on the model (`Ford F-150`) and use a `WHERE` clause with the `BETWEEN` keyword for the year range. Refer to the [BETWEEN clause documentation](https://learn.microsoft.com/en-us/sql/t-sql/language-elements/between-transact-sql?view=sql-server-ver16) for more details.
-  - **Note**: Ensure that the year column's datatype is numerical; non-numerical datatypes will cause issues when filtering by year.
+### 4. Create a Data Visualization
 
-### 5. Create a Data Visualization
+  - **Generate a Plot**:
+    - After running the query:
+      - Click the Results tab.
+      - Select Chart.
+    - This can be a bar chart or line graph that displays the number of crashes per year.
 
-- **Generate a Plot**:
-  - Use the query results to create a visual representation of the data.
-  - This can be a bar chart or line graph that displays the number of crashes per year.
+## Expected Output
 
-## Submission
+> Upon completion, your output should look like the following image:
 
-> Submit the following as proof of your work:
-
-**IMPORTANT:** Ensure your BU account information is visible in the top right corner of your screenshots for verification.
-
-1. **What your SQL Query and Plot should look like**:
-   - <img src="../../images/hw3b/hw7-screenshot.png" alt="Screenshot" width="400">
+1. **SQL Query and Plot in Azure Synapse**:
+   - <img src="../../images/hw3b/hw3b.png" alt="Screenshot" width="400">
    - If not? Make sure to check in with the LFs for support.
-
-
 
 Follow all steps thoroughly and reach out for support if needed. Good luck, and enjoy exploring data with Azure Synapse!
