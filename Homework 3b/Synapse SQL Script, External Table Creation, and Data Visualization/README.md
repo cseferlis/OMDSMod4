@@ -1,4 +1,4 @@
-# THIS IS A DRAFT - PLEASE DO NOT START THIS HOMEWORK
+# 🚧 THIS IS A DRAFT – PLEASE DO NOT START THIS HOMEWORK 🚧
 
 # Homework 3b: Synapse SQL Script, External Table Creation, and Data Visualization
 
