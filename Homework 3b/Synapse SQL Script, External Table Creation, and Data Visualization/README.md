@@ -9,6 +9,8 @@ Create an external table in Azure Synapse, use Synapse SQL scripts to read `.par
 
 ## Tasks
 
+---
+
 ### 1. Set Up ACL Permissions and Synapse Administration
 
 - **Set Access Control List (ACL) Permissions** (Azure Data Lake Storage Gen2):
@@ -22,6 +24,8 @@ Create an external table in Azure Synapse, use Synapse SQL scripts to read `.par
   - Assign yourself the **Synapse Administrator** role.
 
 > **⚠️ Note:** Permissions might already be configured. Double-check before modifying.
+
+---
 
 ### 2. Create an External Table
 
@@ -56,6 +60,8 @@ Create an external table in Azure Synapse, use Synapse SQL scripts to read `.par
   
   - You're now ready to query your external table!
 
+---
+
 ### 3. Data Analysis (SQL Query Instructions)
 
   - Write a new SQL query to extract **crash data specifically for Ford F-150 manufactured between 1990–2010**:
@@ -71,6 +77,8 @@ Create an external table in Azure Synapse, use Synapse SQL scripts to read `.par
 
   > If you encounter an “Invalid object name” error, verify you’re selecting the correct database from the Use database dropdown (do not use the default 'master').
 
+---
+
 ### 4. Create a Data Visualization
 
   - **Generate a Plot**:
@@ -78,6 +86,8 @@ Create an external table in Azure Synapse, use Synapse SQL scripts to read `.par
       - Click the Results tab.
       - Select Chart.
     - This can be a bar chart or line graph that displays the number of crashes per year.
+
+---
 
 ## Expected Output
 
