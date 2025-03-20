@@ -36,7 +36,10 @@ Refer to the [Power BI Report Creation Tutorial](https://learn.microsoft.com/en-
 
 - **Step 2: Create your own Power BI Report**
   - Your report should consist of the following features (Your homework submission will be graded based on whether you fulfilled these requirements):
-    1. 
+    1.
+
+> **IMPORTANT! Save your work frequently! The Virtual Desktop will time out after being idle, and any unsaved work will be lost.**
+
 
 ## Submission
 
