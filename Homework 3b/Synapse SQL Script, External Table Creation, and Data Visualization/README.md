@@ -58,10 +58,11 @@ Create an external table in Azure Synapse, use Synapse SQL scripts to read `.par
 
 ### 3. Data Analysis (SQL Query Instructions)
 
-  - Write a new SQL query to extract **Ford crash data specifically for 1990–2010**:
+  - Write a new SQL query to extract **crash data specifically for Ford F-150 manufactured between 1990–2010**:
 
     #### 🔹 Query Requirements:
-    - **Years:** Between 1990 and 2010
+    - **Car Model:** 'F-150'
+    - **Model Year:** Between '1990' and '2010'
     - **Crash Indicator:** Only crashes (`Crash = 'Y'`)
     - **Aggregate:** Count crashes per year
     - **Sort:** Ascending by year
