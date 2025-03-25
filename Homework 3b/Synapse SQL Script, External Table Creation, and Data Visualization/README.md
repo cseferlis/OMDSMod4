@@ -48,7 +48,7 @@ Create an external table in Azure Synapse, use Synapse SQL scripts to read `.par
     - When prompted, choose the option **Using SQL Script** for creating the external table.
     - Carefully edit the auto-generated `CREATE EXTERNAL TABLE` SQL script:
       - Replace all instances of data type `'bigint'` with `'nvarchar(4000)'` to prevent type conflicts or errors.
-      - Change the name of the columns based on the [Complaints Reference File](https://static.nhtsa.gov/odi/ffdd/cmpl/Import_Instructions_Excel_All.pdf)
+      - Ensure that the column names match those specified in the [Complaints Reference File](https://static.nhtsa.gov/odi/ffdd/cmpl/Import_Instructions_Excel_All.pdf)
         - **⚠️ Note:** This step is crucial for Homework 3c.
   
   - **Step 5: Execute and Validate**
@@ -85,7 +85,7 @@ Create an external table in Azure Synapse, use Synapse SQL scripts to read `.par
     - After running the query:
       - Click the Results tab.
       - Select Chart.
-    - This can be a bar chart or line graph that displays the number of crashes per year.
+    - This can be a bar chart or line graph that displays the number of crashes by year.
 
 ---
 
