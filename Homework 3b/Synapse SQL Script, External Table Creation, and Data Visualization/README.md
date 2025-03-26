@@ -45,10 +45,7 @@ Create an external table in Azure Synapse, use Synapse SQL scripts to read `.par
   
   - **Step 4: SQL Script Adjustments**
     - When prompted, choose the option **Using SQL Script** for creating the external table.
-    - Carefully edit the auto-generated `CREATE EXTERNAL TABLE` SQL script:
-      - Replace all instances of data type `'bigint'` with `'nvarchar(4000)'` to prevent type conflicts or errors.
-      - Ensure that the column names match those specified in the [Complaints Reference File](https://static.nhtsa.gov/odi/ffdd/cmpl/Import_Instructions_Excel_All.pdf)
-        - **⚠️ Note:** This step is crucial for Homework 3c.
+    - Make sure the auto-generated `CREATE EXTERNAL TABLE` SQL script is as you want it.
   
   - **Step 5: Execute and Validate**
     - After editing the script, click **Run**.
