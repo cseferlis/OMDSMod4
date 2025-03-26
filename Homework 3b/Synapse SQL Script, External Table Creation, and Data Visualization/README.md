@@ -41,7 +41,7 @@ Create an external table in Azure Synapse, use Synapse SQL scripts to read `.par
   
   - **Step 3: Define Database and External Table**
     - Provide a clear and descriptive name for your database.
-    - Assign a meaningful name for your external table (e.g., `FordCrashesExternalTable`).
+    - Assign a meaningful name for your external table (e.g., `FordExternalTable`).
   
   - **Step 4: SQL Script Adjustments**
     - When prompted, choose the option **Using SQL Script** for creating the external table.
