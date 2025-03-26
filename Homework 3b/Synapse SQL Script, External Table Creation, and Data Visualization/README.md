@@ -37,8 +37,7 @@ Create an external table in Azure Synapse, use Synapse SQL scripts to read `.par
   
   - **Step 2: Configure External Table Settings**
     - Use the [Azure Synapse External Table Documentation](https://learn.microsoft.com/en-us/azure/synapse-analytics/sql/develop-tables-external-tables?tabs=hadoop) as a reference if needed.
-    - Ensure the external table schema accurately matches the structure of your `.parquet` file to avoid schema mismatch errors.  
-      - **Important:** If you completed Homework 3a correctly, the **Field terminator** should be set to `comma`.
+    - Ensure the external table schema accurately matches the structure of your `.parquet` file to avoid schema mismatch errors.
   
   - **Step 3: Define Database and External Table**
     - Provide a clear and descriptive name for your database.
