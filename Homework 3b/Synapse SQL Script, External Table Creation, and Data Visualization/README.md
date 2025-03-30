@@ -1,5 +1,3 @@
-# 🚧 THIS IS A DRAFT – PLEASE DO NOT START THIS HOMEWORK 🚧
-
 # Homework 3b: Synapse SQL Script, External Table Creation, and Data Visualization
 
 In Homework 3b, you will connect to the `.parquet` file created in Homework 3a, mount it as an external table in your Azure Synapse Serverless Pool, and in Homework 3c visualize the data using PowerBI. This assignment will require setting up proper permissions for your Azure Storage account, ensuring the correct configuration of your `.parquet` file, and running queries to produce a visual representation of the data. In Homework 3c, you will then connect to your Synapse environment from PowerBI and visualize the data you've been working with.
