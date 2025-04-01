@@ -1,6 +1,6 @@
 # 🚧 THIS IS A DRAFT – PLEASE DO NOT START THIS HOMEWORK 🚧
 
-# Homework 8: Microsoft Power BI
+# Homework 3c: Microsoft Power BI
 
 ## Objective
 The primary goal of this homework is to introduce you to **Microsoft Power BI**, focusing on its fundamental tools and techniques for data visualization. Upon completing this assignment, you'll have acquired essential data visualization skills, a core competency for every data analyst.
