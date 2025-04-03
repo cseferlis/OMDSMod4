@@ -43,7 +43,7 @@ Refer to the [Power BI Report Creation Tutorial](https://learn.microsoft.com/en-
   - Paste this address into the **Server** field in Power BI.
   - Choose **Import** as your Data Connectivity Mode.
   - Log in using your Azure credentials via **Microsoft Account**.
-  - Select and load the external table you created in Homework 3c.
+  - Select and load the external table you created in Homework 3b.
   
   - **Transforming Data**:
     - Click on **Table View** (second icon from the top left).
