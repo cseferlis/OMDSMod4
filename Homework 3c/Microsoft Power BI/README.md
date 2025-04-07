@@ -1,5 +1,3 @@
-# 🚧 THIS IS A DRAFT – PLEASE DO NOT START THIS HOMEWORK 🚧
-
 # Homework 3c: Microsoft Power BI
 
 ## Objective
@@ -25,6 +23,9 @@ In Homework 3c, you'll connect Power BI to your Azure Synapse environment, enabl
     - Examples for Folder Redirection setup:
       - <img src="../../images/hw3c/1.png" alt="Folder Redirection Example 1" width="400">
       - <img src="../../images/hw3c/2.png" alt="Folder Redirection Example 2" width="400">
+
+#### Optional
+  - You’re welcome to use the online version of Power BI if you prefer: [Online Power BI](https://app.powerbi.com/)
 
 ---
 ---
@@ -58,6 +59,7 @@ Refer to the [Power BI Report Creation Tutorial](https://learn.microsoft.com/en-
   Follow these steps to import the NHTSA Ford-specific car ratings dataset into your Power BI project:
   
   - Download the filtered NHTSA dataset (`Safercar_data_FORD.csv`) provided in the GitHub Homework 3c folder (filtered specifically to Ford vehicles).
+    - Here’s a public link to the dataset (required for use with the online Power BI): [Safercar Dataset](https://mod4.blob.core.windows.net/hw3c/Safercar_data_FORD.csv)
     - For additional details, review the [NHTSA Ratings Data documentation](https://static.nhtsa.gov/nhtsa/downloads/Safercar/Safercar_data_READ_ME_file.txt).
   
   - Open your existing Power BI report.
@@ -109,7 +111,10 @@ Design your interactive Power BI dashboard by following these requirements:
 1. **Screenshot of your Completed Power BI Report**:
  - Your screenshot must include at least one graph, one table, and one interactive filter.
  - **Example Screenshot**:
-   - <img src="../../images/hw3c/hw3c.png" alt="Screenshot" width="400">
+   - <img src="../../images/hw3c/screenshot1.png" alt="Screenshot" width="400">
+   - <img src="../../images/hw3c/screenshot2.png" alt="Screenshot" width="400">
+   - <img src="../../images/hw3c/screenshot3.png" alt="Screenshot" width="400">
+   - <img src="../../images/hw3c/screenshot4.png" alt="Screenshot" width="400">
    
 2. **Power BI Report File (.pbix)**:
  - Submit the final `.pbix` file containing your fully completed Power BI report.
